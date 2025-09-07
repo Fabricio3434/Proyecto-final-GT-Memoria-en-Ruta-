@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import { Carrusel } from './carrusel de img/carrusel'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       {/* Seccion de bienvenida */}
       <header className='bienvenida'>
         <h1>Memoria en Ruta</h1>
+        <Carrusel/>
         <p>Organizá tus viajes y cenas de egresados de manera intuitiva y rápida</p>
       </header>
       {/* Seccion de viajes */}
