@@ -1,0 +1,44 @@
+header {
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+header>img {
+    display: flex;
+}
+
+#eslogan {
+    display: flex;
+    margin-left: 14px;
+    font-family: unset;
+}
+
+.cenas {
+    margin-top: 200px;
+    border: 2px solid black;
+}
+
+.barra-de-nav {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-left: 55em;
+}
+
+
+.barra-de-nav nav {
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+.barra-de-nav nav:hover {
+    color: 00bfff;
+}
