@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    border: 2px solid violet;
+}
+
+#agradecimientos {
+    margin: 5px;
+    display: flex;
+    padding-top: 20px;
+}

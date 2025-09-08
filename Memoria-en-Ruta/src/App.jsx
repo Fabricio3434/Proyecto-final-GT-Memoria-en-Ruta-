@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import './Header.css'
-import './Cenas.css'
 import './Footer.css'
 import './Carrusel.css'
 
@@ -26,25 +25,32 @@ function App() {
             <nav>destination</nav>
             <nav>contact</nav>
           </div>
-        </header >
+        </header>
 
-        {/* Seccion de viajes */}
-
-        <div>
+        <div className='Carrusel'>
           {/* Carrusel */}
+          carrusel
         </div>
-
-        < section className='cenas' >
-          <h2>Cenas</h2>
-          <p>En esta seccion van las cenas y eventos organizados.</p>
-        </section >
 
         {/* Seccion footer */}
 
         < footer className='footer' >
-          © 2025 Memoria en Ruta - Todos los derechos reservados
-        </footer >
-      </div >
+          <div id=''>
+            © 2025 Memoria en Ruta - Todos los derechos reservados
+          </div>
+
+          <div id='agradecimientos'>
+            <p>Créditos y agradecimientos a:
+              <li>El profe Lucho</li>
+              <li>Fabry</li>
+              <li>Tizi</li>
+              <li>Nanu</li>
+              <li>Luci</li>
+              <li>Ezequiel</li>
+            </p>
+          </div>
+        </footer>
+      </div>
     </>
   )
 }
