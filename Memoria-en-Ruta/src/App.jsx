@@ -3,23 +3,6 @@ import './App.css'
 
 function App() {
   return (
-    <div className='app'>
-      {/* Seccion de bienvenida */}
-      <header className='bienvenida'>
-        <h1>Memoria en Ruta</h1>
-        <p>Organizá tus viajes y cenas de egresados de manera intuitiva y rápida</p>
-      </header>
-      {/* Seccion de viajes */}
-      <section className='cenas'>
-        <h2>Cenas</h2>
-        <p>En esta seccion van las cenas y eventos organizados.</p>
-      </section>
-      {/* Seccion footer */}
-      <footer className='footer'>
-        © 2025 Memoria en Ruta - Todos los derechos reservados
-      </footer>
-    </div>
-  )
 }
 
 export default App
