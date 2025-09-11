@@ -17,11 +17,6 @@ header>img {
     font-family: unset;
 }
 
-.cenas {
-    margin-top: 200px;
-    border: 2px solid black;
-}
-
 .barra-de-nav {
     display: flex;
     justify-content: flex-end;

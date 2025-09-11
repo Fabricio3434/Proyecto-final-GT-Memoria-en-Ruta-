@@ -1,8 +1,8 @@
 import React from 'react'
-import './App.css'
-import './Header.css'
-import './Footer.css'
-import './Carrusel.css'
+import './CSS/App.css'
+import './CSS/Header.css'
+import './CSS/Footer.css'
+import './CSS/Carrusel.css'
 
 function App() {
   return (
@@ -28,17 +28,30 @@ function App() {
         </header>
 
         <div className='Carrusel'>
-          {/* Carrusel */}
-          carrusel
+
+          <div className='cenas'>
+            <p>Descubre aqui las cenas!</p>
+            <p id='Destinos-populares'>Éstos son los lugares mas buscados:</p>
+            <img src="ger" alt="img1" />
+            <img src="few" alt="img2" />
+            <img src="ds" alt="img3" />
+          </div>
+
+
+
+          <div className='viajes'>
+            <p>Descubre aquí los viajes!</p>
+            <p id='Destinos-populares'>Éstos son los destinos mas buscados:</p>
+            <img src="ger" alt="img1" />
+            <img src="few" alt="img2" />
+            <img src="ds" alt="img3" />
+          </div>
+
         </div>
 
         {/* Seccion footer */}
 
-        < footer className='footer' >
-          <div id=''>
-            © 2025 Memoria en Ruta - Todos los derechos reservados
-          </div>
-
+        < footer className='footer'>
           <div id='agradecimientos'>
             <p>Créditos y agradecimientos a:
               <li>El profe Lucho</li>
@@ -49,8 +62,13 @@ function App() {
               <li>Ezequiel</li>
             </p>
           </div>
+          <div id='copyright'>
+            © 2025 Memoria en Ruta - Todos los derechos reservados
+          </div>
+
+
         </footer>
-      </div>
+      </div >
     </>
   )
 }

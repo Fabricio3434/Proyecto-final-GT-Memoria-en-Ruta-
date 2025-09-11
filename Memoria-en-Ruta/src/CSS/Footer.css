@@ -1,0 +1,17 @@
+.footer {
+    display: block;
+    border: 2px solid violet;
+    padding: 0;
+    bottom: 0;
+    padding: 10px;
+    position: fixed;
+}
+
+#copyright {
+    display: block;
+}
+
+#agradecimientos {
+    margin: 5px;
+    display: block;
+}

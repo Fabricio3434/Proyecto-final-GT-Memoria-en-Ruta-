@@ -1,0 +1,20 @@
+.Carrusel {
+    border: 2px solid blue;
+    padding: 4px;
+}
+
+.cenas {
+    display: block;
+    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.viajes {
+    display: block;
+    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#Destinos-populares {
+    font-size: 20px;
+}
