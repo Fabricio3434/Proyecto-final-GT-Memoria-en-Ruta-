@@ -14,18 +14,28 @@ function AcercaDe() {
 function Contacto() {
   return <h2>Página de contacto</h2>;
 }
+
+function Cena() {
+  return <h2>Página de cena</h2>;
+}
+
+function Viaje() {
+  return <h2>Página de viaje</h2>;
+}
 function App() {
 
   return (
     <>
-     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/about" element={<AcercaDe />} />
-        <Route path="/contact" element={<Contacto />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/home" element={<Inicio />} />
+          <Route path="/dinner" element={<Cena />} />
+          <Route path="/travel" element={<Viaje />} />
+          <Route path="/about" element={<AcercaDe />} />
+          <Route path="/contact" element={<Contacto />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
