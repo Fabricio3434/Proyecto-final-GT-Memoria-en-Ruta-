@@ -1,0 +1,57 @@
+.margen{
+    border: 3px solid green;
+    height: 400px;
+
+}
+.contenedor{
+    position: relative;
+    height: 100%;
+    /*background-color: blue;*/
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius:20px ;
+    overflow: hidden;
+}
+.boton_carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.6);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.izquierdo {
+  left: 10px;
+}
+
+.derecho {
+  right: 10px;
+}
+.img ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.img li { 
+    flex: 0 0 auto;
+}
+.img {
+    width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.img img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
