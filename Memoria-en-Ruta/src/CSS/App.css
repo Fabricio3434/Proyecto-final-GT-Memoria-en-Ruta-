@@ -1,4 +1,22 @@
-body {
-    margin: 0;
-    padding: 0;
+@media (max-width: 768px) {
+    .destino {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .destino {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .bienvenida h1 {
+        font-size: 24px;
+    }
+
+    .bienvenida p {
+        font-size: 14px;
+    }
 }
