@@ -1,12 +1,11 @@
 .footer {
-    display: block;
-    border: 2px solid violet;
-    padding: 0;
-    bottom: 0;
-    padding: 10px;
-    position: fixed;
+    background: #222;
+    color: white;
+    text-align: start;
+    padding: 20px;
 }
 
+/* 
 #copyright {
     display: block;
 }
@@ -14,4 +13,4 @@
 #agradecimientos {
     margin: 5px;
     display: block;
-}
+} */

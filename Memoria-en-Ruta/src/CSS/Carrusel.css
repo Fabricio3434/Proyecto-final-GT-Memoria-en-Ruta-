@@ -1,20 +1,60 @@
-.Carrusel {
-    border: 2px solid blue;
-    padding: 4px;
-}
-
+.viajes,
 .cenas {
-    display: block;
-    font-size: 30px;
-    border: 2px solid rgb(0, 0, 0);
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.viajes {
-    display: block;
-    font-size: 30px;
-    border: 2px solid rgb(0, 0, 0);
+.viajes h2,
+.cenas h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #222;
 }
 
-#Destinos-populares {
+.viajes p,
+.cenas p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Contenedor de tarjetas */
+.destinos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Cada tarjeta */
+.destino {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destino:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.destino img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.destino h3 {
+    padding: 12px;
     font-size: 20px;
+    background: #fafafa;
+    color: #333;
 }

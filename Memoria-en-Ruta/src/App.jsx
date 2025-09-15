@@ -27,48 +27,73 @@ function App() {
           </div>
         </header>
 
+        {/* Cenas */}
+
         <div className='Carrusel'>
+          <section className="cenas">
+            <h2>Cenas</h2>
+            <p>Éstas son las cenas más buscadas:</p>
 
-          <div className='cenas'>
-            <p>Descubre aqui las cenas!</p>
-            <p id='Destinos-populares'>Éstos son los lugares mas buscados:</p>
-            <img src="ger" alt="img1" />
-            <img src="few" alt="img2" />
-            <img src="ds" alt="img3" />
-          </div>
+            <div className="destinos">
+              <div className="destino">
+                <img src="https://via.placeholder.com/250x150" alt="Cena 1" />
+                <h3>Cena en Buenos Aires</h3>
+              </div>
+              <div className="destino">
+                <img src="https://via.placeholder.com/250x150" alt="Cena 2" />
+                <h3>Cena en Córdoba</h3>
+              </div>
+              <div className="destino">
+                <img src="https://via.placeholder.com/250x150" alt="Cena 3" />
+                <h3>Cena en Rosario</h3>
+              </div>
+            </div>
+          </section>
+        </div>
 
+        {/* Viajes */}
 
+        <div className='Carrusel'>
+          <section className="viajes">
+            <h2>Viajes</h2>
+            <p>Éstos son los destinos más buscados:</p>
 
-          <div className='viajes'>
-            <p>Descubre aquí los viajes!</p>
-            <p id='Destinos-populares'>Éstos son los destinos mas buscados:</p>
-            <img src="ger" alt="img1" />
-            <img src="few" alt="img2" />
-            <img src="ds" alt="img3" />
-          </div>
-
+            <div className="destinos">
+              <div class="destino">
+                <img src="https://via.placeholder.com/250x150" alt="Destino 1" />
+                <h3>París</h3>
+              </div>
+              <div className="destino">
+                <img src="https://via.placeholder.com/250x150" alt="Destino 2" />
+                <h3>Roma</h3>
+              </div>
+              <div className="destino">
+                <img src="https://via.placeholder.com/250x150" alt="Destino 3" />
+                <h3>Tokio</h3>
+              </div>
+            </div>
+          </section>
         </div>
 
         {/* Seccion footer */}
 
-        < footer className='footer'>
-          <div id='agradecimientos'>
-            <p>Créditos y agradecimientos a:
+        <footer className="footer">
+          <div id="agradecimientos">
+            <p>Créditos y agradecimientos a:</p>
+            <ul>
               <li>El profe Lucho</li>
               <li>Fabry</li>
               <li>Tizi</li>
               <li>Nanu</li>
               <li>Luci</li>
               <li>Ezequiel</li>
-            </p>
+            </ul>
           </div>
-          <div id='copyright'>
+          <div id="copyright">
             © 2025 Memoria en Ruta - Todos los derechos reservados
           </div>
-
-
         </footer>
-      </div >
+      </div>
     </>
   )
 }
