@@ -1,83 +1,59 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import './carrusel.css'
-// fotos
+//las fotos
 import avion from './imagenes/avion.jpg'
 import banana from './imagenes/banana.jpg'
 import codri from './imagenes/codri.jpg'
-import { Botond } from './botond'
-import { Botoni } from './botoni'
-//...
+
+
 export function Carrusel(){
-    const [index, setIndex] = useState(0)
-    const Listref= useRef()
-    const datos = [
-    {
-        id: 1,
-        img: avion,
-        "titulo": "ARMAMOS TU VIAJE",
-        "descripcion": "viaja seguro con nosotros"
-    },
-    {
-        id: 2,
-        img: banana,
-        "titulo": "ORGANIZA TU VIAJE",
-        "descripcion": "te ayudamos"
-    },
-    {
-        id: 3,
-        img: codri,
-        "titulo": "ORGANIZA TU VIAJE",
-        "descripcion": "te ayudamos"
-    }
-]
-//useeffect
-useEffect(()=>{
-const List = Listref.current
-const img= List.querySelectorAll("li > img")
-const p = img[index]
-if(p){
-    p.scrollIntoView({
-        behavior:"smooth"
-    })
+const carruselRef = useRef(null)
+//para el boton derecho (avanzar)
+const moverDerecha = ()=>{
+    const carrusel = carruselRef.current
+    const primerContenido = document.querySelectorAll(".contenido")[0]
+    carrusel.style.marginLeft = "-200%"
+    carrusel.style.transition = "all 0.5s"
+    setTimeout(()=>{
+        carrusel.style.transition = "none"
+        carrusel.insertAdjacentElement('beforeend', primerContenido)
+        carrusel.style.marginLeft = "-100%"
+    }, 500)
 }
-}, [index])
-//
-const mover= (direccion)=>{
-    if(direccion=== 'antes'){
-setIndex(curr =>{ 
-const primeraimg= curr===0
-    return primeraimg ? datos.length - 1 : curr - 1
-})
-    }
-    else{
-        setIndex(curr=> {
-        const ultimaimg = curr=== datos.length -1
-        return ultimaimg ? 0 : curr + 1 
-    })
-        
-    }
+//Para el boton izquierdo (retroceder)
+const moverIzquierda = ()=> {
+    const carrusel = carruselRef.current
+    const contenido = document.querySelectorAll(".contenido")
+    const ultimoContenido = contenido[contenido.length - 1]
+    carrusel.style.marginLeft = "0"
+    carrusel.style.transition = "all 0.5s"
+    setTimeout(()=>{
+      carrusel.style.transition = "none"
+      carrusel.insertAdjacentElement('afterbegin', ultimoContenido)
+      carrusel.style.marginLeft = "-100%"
+    }, 500)
 }
-//lo que retorna la función 
-    return(
+return (
     <>
-   <div className="margen">
 <div className='contenedor'>
-    <Botond onClick={()=>mover('despues')} className="boton_carrusel derecho"/>
-    <Botoni onClick={()=>mover('antes')} className="boton_carrusel izquierdo"/>
-    <div className='img'>
-<ul ref={Listref}>
-{
-    datos.map((item)=>{
-        return <li key= {item.id}>
-            <img src= {item.img} width={400} height={400}/>
-        </li>
-    })
-}
-</ul>
-    </div>
+<div className='carrusel' ref={carruselRef}>
+<div className="contenido">
+    <img src={avion} alt='' className='img'/>
+</div>
+<div className="contenido">
+   <img src={banana} alt='' className='img'/> 
+</div>
+<div className="contenido">
+    <img src={codri} alt='' className='img'/>
+</div>
+</div>
+
+<button className='botones' id='izq' onClick={moverIzquierda}> A </button>
+<button className='botones' id='der' onClick={moverDerecha}> D </button>
 
 </div>
-   </div>
+</>
 
-    </>)
+)
+
 }
