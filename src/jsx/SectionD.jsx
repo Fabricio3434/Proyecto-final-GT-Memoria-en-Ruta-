@@ -1,4 +1,4 @@
-import '../css/Carrusel.css'
+import '../css/Sections.css'
 import '../css/Footer.css'
 
 const DinnerSection = () => {

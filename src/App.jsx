@@ -1,13 +1,12 @@
 import Navbar from './jsx/Navbar.jsx'
 import SectionD from './jsx/SectionD.jsx'
 import SectionT from './jsx/SectionT.jsx'
+import Carrusel from './jsx/carrusel.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 
 
-function Inicio() {
-  return <h2>Página de inicio</h2>;
-}
+function Inicio() { }
 
 function AcercaDe() {
   return <h2>Página Acerca de</h2>;
@@ -53,16 +52,21 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Inicio />} />
+          <Route path="/home" element={
+            <>
+              <Inicio />
+              <Carrusel />
+              <SectionD />
+              <SectionT />
+              <Footer />
+            </>
+          } />
           <Route path="/dinner" element={<Cena />} />
           <Route path="/travel" element={<Viaje />} />
           <Route path="/about" element={<AcercaDe />} />
           <Route path="/contact" element={<Contacto />} />
         </Routes>
       </BrowserRouter>
-      <SectionD />
-      <SectionT />
-      <Footer />
     </>
   )
 }
