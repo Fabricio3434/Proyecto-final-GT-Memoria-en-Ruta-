@@ -4,7 +4,10 @@ import './carrusel.css'
 import avion from './imagenes/avion.jpg'
 import banana from './imagenes/banana.jpg'
 import codri from './imagenes/codri.jpg'
-
+//
+import { Botoni } from './botoni'
+import { Botond } from './botond'
+import { Contenido } from './contenido'
 
 export function Carrusel(){
 const carruselRef = useRef(null)
@@ -33,24 +36,27 @@ const moverIzquierda = ()=> {
       carrusel.style.marginLeft = "-100%"
     }, 500)
 }
+const información = [
+    {src: avion, alt:"", texto: ["un avión", "avioncito"]},
+    {src: banana, alt:"", texto: ["una banana"]},
+    {src: codri, alt: "", texto: ["un cocodrilo", "en el agua"]}
+]
+
 return (
     <>
 <div className='contenedor'>
 <div className='carrusel' ref={carruselRef}>
-<div className="contenido">
-    <img src={avion} alt='' className='img'/>
+{información.map((item, index)=>(
+   <Contenido
+   key={index}
+   src={item.src}
+   alt={item.alt}
+   texto= {item.texto}
+   /> 
+))}
 </div>
-<div className="contenido">
-   <img src={banana} alt='' className='img'/> 
-</div>
-<div className="contenido">
-    <img src={codri} alt='' className='img'/>
-</div>
-</div>
-
-<button className='botones' id='izq' onClick={moverIzquierda}> A </button>
-<button className='botones' id='der' onClick={moverDerecha}> D </button>
-
+<Botoni onClick={moverIzquierda}/>
+<Botond onClick={moverDerecha}/>
 </div>
 </>
 
