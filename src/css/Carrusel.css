@@ -1,30 +1,28 @@
 .contenedor {
-    border: 5px solid blue;
+    margin: 3px;
     width: 100%;
-    max-width: 900px;
+    /*max-width: 1600px ;*/
     overflow: hidden;
     position: relative;
 }
-
-.img {
+.img{
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.carrusel {
+.carrusel{
     display: flex;
     height: 300px;
     width: 300%;
     margin-left: -100%;
 }
-
-.contenido {
+.contenido{
     width: 100%;
+    position: relative;
+    display: flex;  
 }
-
-.botones {
+.botones{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -34,27 +32,21 @@
     font-weight: bold;
     font-size: 30px;
 }
-
-#der {
+#der{
     right: 10px;
 }
-
-#izq {
+#izq{
     left: 10px;
 }
 .texto{
-    position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0; /* puedes usar top:0 o center si querés */
-  padding: 12px;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  color: white;
-  margin: 0;
-  font-weight: 600;
-  font-size: 14px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: rgba(190, 16, 16, 0.7);
+  /*background: rgba(0,0,0,0.5);*/
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 2em;
+  width: 70%;
+  text-shadow: -10px 5px 10px black;
 }

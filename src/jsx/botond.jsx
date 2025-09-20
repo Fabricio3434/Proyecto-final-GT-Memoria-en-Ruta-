@@ -1,5 +1,5 @@
 export function Botond({onClick}){
     return(
-        <button onClick={onClick}> A </button>
+        <button onClick={onClick} className="botones" id="der"> A </button>
     )
 }
