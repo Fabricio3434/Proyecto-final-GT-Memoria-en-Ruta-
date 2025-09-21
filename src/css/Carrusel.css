@@ -22,6 +22,7 @@
 
 .contenido {
     width: 100%;
+    position: relative;
 }
 
 .botones {
@@ -41,4 +42,13 @@
 
 #izq {
     left: 10px;
+}
+.texto{
+    position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: rgb(180, 30, 30);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 18px;
 }
