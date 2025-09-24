@@ -1,19 +1,18 @@
-import Navbar from './jsx/Navbar.jsx'
-import SectionD from './jsx/SectionD.jsx'
-import SectionT from './jsx/SectionT.jsx'
-import Carrusel from './jsx/carrusel.jsx'
+import { Navbar } from './jsx/Navbar.jsx'
+import { DinnerSection, TravelSection } from './jsx/Sections.jsx'
+import { Carrusel } from './jsx/carrusel.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 
-
-function Inicio() { }
-
-function AcercaDe() {
-  return <h2>Página Acerca de</h2>;
-}
-
-function Contacto() {
-  return <h2>Página de contacto</h2>;
+function Home() {
+  return (
+    <>
+      <Carrusel />
+      <DinnerSection />
+      <TravelSection />
+      <Footer />
+    </>
+  )
 }
 
 function Cena() {
@@ -22,6 +21,14 @@ function Cena() {
 
 function Viaje() {
   return <h2>Página de viaje</h2>;
+}
+
+function Contacto() {
+  return <h2>Página de contacto</h2>;
+}
+
+function AcercaDe() {
+  return <h2>Página Acerca de</h2>;
 }
 
 const Footer = () => {
@@ -52,15 +59,8 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/home" element={
-            <>
-              <Inicio />
-              <Carrusel />
-              <SectionD />
-              <SectionT />
-              <Footer />
-            </>
-          } />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/dinner" element={<Cena />} />
           <Route path="/travel" element={<Viaje />} />
           <Route path="/about" element={<AcercaDe />} />

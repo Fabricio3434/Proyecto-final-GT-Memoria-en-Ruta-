@@ -4,11 +4,8 @@ import '../css/Carrusel.css'
 import avion from '../private/avion.jpg'
 import banana from '../private/banana.jpg'
 import codri from '../private/codri.jpg'
-import { Contenido } from './contenido'
-import { Botond } from './botond'
-import { Botoni } from './botoni'
 
-
+//El carrusel
 export function Carrusel() {
     const carruselRef = useRef(null)
     //para el boton derecho (avanzar)
@@ -62,4 +59,34 @@ export function Carrusel() {
     )
 }
 
-export default Carrusel;
+//Botones
+//Botón izquierdo
+export function Botoni({onClick}){
+    return (
+        <button onClick={onClick} className="botones" id="izq"> P </button>
+    )
+}
+
+//Botón derecho
+export function Botond({onClick}){
+    return(
+        <button onClick={onClick} className="botones" id="der"> A </button>
+    )
+}
+
+//Contenido del carrusel (la foto y el texto)
+export function Contenido({ src, alt, texto = [] }) {
+    return (
+        <>
+            <div className="contenido">
+                <img src={src} alt={alt} className="img" />
+                <div className="texto">
+                    {texto.map((linea, i) => (
+                        <p key={i}>{linea}</p>
+                    ))}
+                </div>
+            </div>
+        </>
+
+    )
+}

@@ -2,7 +2,7 @@ import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 
-const Navbar = () => {
+export function Navbar () {
     return (
         <nav className="Navbar">
             <div className="minibar-box">
@@ -28,6 +28,4 @@ const Navbar = () => {
             </div>
         </nav>
     );
-};
-
-export default Navbar;
+}
