@@ -39,7 +39,7 @@ export function TravelSection () {
                 <p>Éstos son los destinos más buscados:</p>
 
                 <div className="destinos">
-                    <div class="destino">
+                    <div className="destino">
                         <img src="https://via.placeholder.com/250x150" alt="Destino 1" />
                         <h3>París</h3>
                     </div>

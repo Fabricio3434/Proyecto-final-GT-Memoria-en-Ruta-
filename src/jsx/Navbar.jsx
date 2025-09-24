@@ -1,6 +1,8 @@
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
+import { DinnerSection, TravelSection } from "./Sections.jsx"
+import { Carrusel } from "./carrusel.jsx"
 
 export function Navbar() {
     return (
@@ -32,7 +34,7 @@ export function Navbar() {
 
 //Secciones de la navbar
 //Home
-export function Home() {
+export function Inicio() {
     return (
         <>
             <Carrusel />
@@ -71,23 +73,23 @@ export function AcercaDe() {
 }
 
 //Footer
-export function Footer () {
-  return (
-    <footer className="footer">
-      <div id="agradecimientos">
-        <p>Créditos y agradecimientos a:</p>
-        <ul>
-          <li>El profe Lucho</li>
-          <li>Fabry</li>
-          <li>Tizi</li>
-          <li>Nanu</li>
-          <li>Luci</li>
-          <li>Ezequiel</li>
-        </ul>
-      </div>
-      <div id="copyright">
-        © 2025 Memoria en Ruta - Todos los derechos reservados
-      </div>
-    </footer>
-  )
+export function Footer() {
+    return (
+        <footer className="footer">
+            <div id="agradecimientos">
+                <p>Créditos y agradecimientos a:</p>
+                <ul>
+                    <li>El profe Lucho</li>
+                    <li>Fabry</li>
+                    <li>Tizi</li>
+                    <li>Nanu</li>
+                    <li>Luci</li>
+                    <li>Ezequiel</li>
+                </ul>
+            </div>
+            <div id="copyright">
+                © 2025 Memoria en Ruta - Todos los derechos reservados
+            </div>
+        </footer>
+    )
 }
