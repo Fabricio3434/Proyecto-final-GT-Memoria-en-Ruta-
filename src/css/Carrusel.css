@@ -1,7 +1,6 @@
 .contenedor {
-    border: 5px solid blue;
     width: 100%;
-    max-width: 900px;
+    /*max-width: 900px;*/
     overflow: hidden;
     position: relative;
 }
