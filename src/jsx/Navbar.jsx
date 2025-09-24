@@ -2,7 +2,7 @@ import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 
-export function Navbar () {
+export function Navbar() {
     return (
         <nav className="Navbar">
             <div className="minibar-box">
@@ -28,4 +28,66 @@ export function Navbar () {
             </div>
         </nav>
     );
+}
+
+//Secciones de la navbar
+//Home
+export function Home() {
+    return (
+        <>
+            <Carrusel />
+            <DinnerSection />
+            <TravelSection />
+        </>
+    )
+}
+
+//Cena
+export function Cena() {
+    return (
+        <h2>Página de cena</h2>
+    )
+}
+
+//Viaje
+export function Viaje() {
+    return (
+        <h2>Página de viaje</h2>
+    )
+}
+
+//Contacto
+export function Contacto() {
+    return (
+        <h2>Página de contacto</h2>
+    )
+}
+
+//Acerca de
+export function AcercaDe() {
+    return (
+        <h2>Página Acerca de</h2>
+    )
+}
+
+//Footer
+export function Footer () {
+  return (
+    <footer className="footer">
+      <div id="agradecimientos">
+        <p>Créditos y agradecimientos a:</p>
+        <ul>
+          <li>El profe Lucho</li>
+          <li>Fabry</li>
+          <li>Tizi</li>
+          <li>Nanu</li>
+          <li>Luci</li>
+          <li>Ezequiel</li>
+        </ul>
+      </div>
+      <div id="copyright">
+        © 2025 Memoria en Ruta - Todos los derechos reservados
+      </div>
+    </footer>
+  )
 }
