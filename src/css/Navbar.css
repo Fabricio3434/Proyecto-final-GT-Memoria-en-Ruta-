@@ -4,7 +4,8 @@
     width: 100%;
     height: 60px;
     align-items: center;
-    background: #222;
+    background: #1B2A41;
+    color: #ffffff;
     display: flex;
     justify-content: flex-end;
  }
@@ -29,7 +30,7 @@
  .minibar-box {
     position: absolute;
     left: 20px;
-    color: white;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
  }
@@ -41,7 +42,7 @@
  .Título {
     position: absolute;
     left: 75px;
-    color: white;
+    color: #FA9F42;
     font-size: 30px;
     font-weight: bold;
  }

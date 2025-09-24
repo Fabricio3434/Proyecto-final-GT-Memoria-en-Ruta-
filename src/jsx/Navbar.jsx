@@ -2,7 +2,8 @@ import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 import { DinnerSection, TravelSection } from "./Sections.jsx"
-import { Carrusel } from "./carrusel.jsx"
+import { Carrusel } from "./carrusel.jsx";
+import { Contact } from "./Contact.jsx";
 
 export function Navbar() {
     return (
@@ -40,6 +41,7 @@ export function Inicio() {
             <Carrusel />
             <DinnerSection />
             <TravelSection />
+            <Footer />
         </>
     )
 }
@@ -61,7 +63,7 @@ export function Viaje() {
 //Contacto
 export function Contacto() {
     return (
-        <h2>Página de contacto</h2>
+        <Contact />
     )
 }
 

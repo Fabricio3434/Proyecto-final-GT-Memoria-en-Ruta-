@@ -32,7 +32,6 @@ export function DinnerSection () {
 //Sección de viajes
 export function TravelSection () {
     return (
-       
          <div className='Carrusel'>
             <section className="viajes">
                 <h2>Viajes</h2>
