@@ -1,5 +1,12 @@
-form {
-  margin-left: 30px;
+#container {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#form {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -17,8 +24,7 @@ h2 {
   margin-left: 12px;
 }
 
-input,
-textarea {
+.complete {
   padding: 0.5rem;
   background-color: #1B2A41;
   border: none;
@@ -29,29 +35,67 @@ textarea {
   justify-content: center;
   margin-left: 12px;
   margin-top: 5px;
-  color: white;
+  color: #E3C16F;
+  font-weight: bold;
   box-sizing: border-box;
   width: 90%;
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
   transition: 300ms ease-in-out;
 }
 
-.Complete:focus {
-  background-color: #E3C16F;
+.complete:focus {
+  background-color: #e3c16f;
   transform: scale(1.05);
   box-shadow: 13px 13px 100px #E3C16F,
     -13px -13px 100px #1B2A41;
+  color: #1B2A41;
 }
 
-button {
-  padding: 0.5rem 1rem;
-  background-color: #1B2A41;
-  color: white;
+#send-span {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#send {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  width: 8rem;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(82.3deg,
+      rgba(227, 193, 111, 1) 10.8%,
+      rgb(184, 147, 63) 94.3%);
+  color: #1B2A41;
+  font-weight: bold;
   border: none;
-  border-radius: 20px;
   cursor: pointer;
 }
 
-button:hover {
+#send:hover::before {
+  transform: scaleX(1);
+}
+
+/*redes sociales*/
+
+#redes {
+  display: flex;
+  justify-content: center;
   background-color: #1B2A41;
+  width: 52rem;
+  height: 480px;
+  color: #e3c16f;
+  padding: 30px;
+  padding-top: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#redes-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
 }
