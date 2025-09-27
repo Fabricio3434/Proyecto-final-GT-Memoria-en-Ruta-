@@ -1,31 +1,57 @@
 form {
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
-  background-color: #0056b3;
-  width: 300px;
+  border-radius: 20px;
+  width: 400px;
   gap: 1rem;
+  background-color: #1B2A41;
+  padding: 30px;
+  padding-top: 10px;
 }
 
-label {
+label,
+h2 {
   font-weight: bold;
+  color: #E3C16F;
+  margin-left: 12px;
 }
 
 input,
 textarea {
   padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: #1B2A41;
+  border: none;
+  /*border: 1px solid #E3C16F;*/
+  border-radius: 15px;
+  outline: none;
+  display: block;
+  justify-content: center;
+  margin-left: 12px;
+  margin-top: 5px;
+  color: white;
+  box-sizing: border-box;
+  width: 90%;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+}
+
+.Complete:focus {
+  background-color: #E3C16F;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #E3C16F,
+    -13px -13px 100px #1B2A41;
 }
 
 button {
   padding: 0.5rem 1rem;
-  background-color: #007bff;
+  background-color: #1B2A41;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #1B2A41;
 }

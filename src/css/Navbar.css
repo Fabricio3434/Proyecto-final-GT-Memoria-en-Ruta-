@@ -17,7 +17,7 @@
  }
 
  .navbar-link:hover {
-    background-color: grey;
+    background-color: #0D324D;
     border-radius: 5px;
  }
 
@@ -30,7 +30,7 @@
  .minibar-box {
     position: absolute;
     left: 20px;
-    color: #ffffff;
+    color: #E3C16F;
     font-size: 18px;
     font-weight: bold;
  }
@@ -42,7 +42,7 @@
  .Título {
     position: absolute;
     left: 75px;
-    color: #FA9F42;
+    color: #E3C16F;
     font-size: 30px;
     font-weight: bold;
  }

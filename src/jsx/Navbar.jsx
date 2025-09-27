@@ -14,19 +14,19 @@ export function Navbar() {
             <h1 className="Título">MEMORIA EN RUTA</h1>
             <div className="navbar-links">
                 <Link className="navbar-link" to="/home">
-                    <Home />
+                    <Home sx={{ color: "#E3C16F" }} />
                 </Link>
                 <Link className="navbar-link" to="/dinner">
-                    <Flatware />
+                    <Flatware sx={{ color: "#E3C16F" }} />
                 </Link>
                 <Link className="navbar-link" to="/travel">
-                    <Luggage />
+                    <Luggage sx={{ color: "#E3C16F" }} />
                 </Link>
                 <Link className="navbar-link" to="/contact">
-                    <Person />
+                    <Person sx={{ color: "#E3C16F" }} />
                 </Link>
                 <Link className="navbar-link" to="/about">
-                    <Info />
+                    <Info sx={{ color: "#E3C16F" }} />
                 </Link>
             </div>
         </nav>
