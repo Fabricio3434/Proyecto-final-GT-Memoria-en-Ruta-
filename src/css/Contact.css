@@ -21,7 +21,6 @@ label,
 h2 {
   font-weight: bold;
   color: #E3C16F;
-  margin-left: 12px;
 }
 
 .complete {
@@ -80,14 +79,14 @@ h2 {
 /*redes sociales*/
 
 #redes {
-  display: flex;
+  display: grid;
   justify-content: center;
+  text-align: center;
   background-color: #1B2A41;
-  width: 52rem;
-  height: 480px;
+  width: 90%;
+  max-width: 62rem;
+  height: 520px;
   color: #e3c16f;
-  padding: 30px;
-  padding-top: 10px;
   border-radius: 20px;
   font-weight: bold;
   font-size: 1rem;
@@ -97,5 +96,30 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-direction: column;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#red-button {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 8rem;
+  width: 8rem;
+  padding: 0 2rem;
+  border-bottom-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background: linear-gradient(82.3deg,
+      rgba(227, 193, 111, 1) 10.8%,
+      rgb(184, 147, 63) 94.3%);
+  color: #1B2A41;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }

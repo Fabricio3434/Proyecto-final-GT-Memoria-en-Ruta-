@@ -31,8 +31,12 @@ export function Contact() {
       </form>
 
       <div id='redes'>
-        <h3>O si prefieres, contactanos por nuestras redes sociales!</h3>
+        <h2>O si prefieres, contactanos por nuestras redes sociales!</h2>
         <div id='redes-buttons'>
+          <button id='red-button' onClick={() => window.open('https://www.facebook.com', '_blank')}>Facebook</button>
+          <button id='red-button' onClick={() => window.open('https://www.twitter.com', '_blank')}>Twitter</button>
+          <button id='red-button' onClick={() => window.open('https://www.instagram.com', '_blank')}>Instagram</button>
+          <button id='red-button' onClick={() => window.open('https://www.linkedin.com', '_blank')}>LinkedIn</button>
         </div>
       </div>
     </div>
