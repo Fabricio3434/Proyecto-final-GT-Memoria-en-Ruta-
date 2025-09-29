@@ -32,7 +32,7 @@ export function Contact() {
       </form>
 
       <div id='redes'>
-        <h2>O si prefieres, contactanos por nuestras redes sociales!</h2>
+        <h2 className="subtitle" >O si prefieres, contactanos por nuestras redes sociales!</h2>
         <div id='redes-buttons'>
           <button id='red-button-Facebook'
             onClick={() => window.open('https://www.facebook.com', '_blank')}>Facebook</button>
@@ -47,7 +47,7 @@ export function Contact() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 const handleSubmit = (e) => {
@@ -59,7 +59,11 @@ const handleSubmit = (e) => {
     e.target,
     "zAKBS-JL0agE_sUp4"
   ).then(() => {
-    alert("Mensaje enviado a tu correo!");
+    return (
+      <div id='Message-sent'>
+        <h1>Tu mensaje fue enviado! Nos pondremos en contacto contigo pronto.</h1>
+      </div>
+    )
   }).catch((error) => {
     console.error(error);
     alert("Error al enviar");

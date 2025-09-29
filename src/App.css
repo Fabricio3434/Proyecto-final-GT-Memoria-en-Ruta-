@@ -15,12 +15,12 @@ body {
     #red-button-Instagram,
     #red-button-LinkedIn,
     #red-button-WhatsApp {
-        height: 6rem;
         width: 6rem;
         border-bottom-left-radius: 2rem;
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 6px;
         border-top-left-radius: 6px;
+        font-size: 15px;
     }
 }
 
@@ -31,7 +31,7 @@ body {
     }
 
     #redes-buttons {
-        flex-direction: column;
+        flex-direction: block;
         gap: 30px;
         align-items: center;
         padding-bottom: 50px;
@@ -43,12 +43,11 @@ body {
     #red-button-Instagram,
     #red-button-LinkedIn,
     #red-button-WhatsApp {
-        height: 4rem;
         border-bottom-left-radius: 1rem;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 4px;
         border-top-left-radius: 4px;
-        font-size: 10px;
+        font-size: 15px;
         font-weight: bold;
         display: grid;
     }
@@ -58,6 +57,7 @@ body {
     #redes {
         font-size: 10px;
         height: auto;
+        width: 90%;
     }
 
     #form {
@@ -69,6 +69,34 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #redes-buttons {
+        flex-direction: block;
+        gap: 30px;
+        align-items: center;
+        padding-bottom: 50px;
+        height: auto;
+    }
+
+    #red-button-Facebook,
+    #red-button-Twitter,
+    #red-button-Instagram,
+    #red-button-LinkedIn,
+    #red-button-WhatsApp {
+        width: 4rem;
+        border-bottom-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 6px;
+        font-size: 10px;
     }
 }
 
