@@ -6,6 +6,35 @@ html {
     background-color: #F5FBEF;
 }
 
+@media (max-width: 950px) {
+
+    #container {
+        min-height: 70vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "form form redes redes"
+            "form form welcome welcome";
+    }
+
+    #red-button-Facebook,
+    #red-button-Twitter,
+    #red-button-Instagram,
+    #red-button-LinkedIn,
+    #red-button-WhatsApp {
+        width: 6rem;
+        border-bottom-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 6px;
+        font-size: 15px;
+    }
+
+    #message-welcome {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 850px) {
     #redes {
         padding-left: 20px;

@@ -24,7 +24,7 @@ export function Contact() {
         <div>
           <label htmlFor="Message">Mensaje</label>
           <textarea id="Message" name="Message" placeholder="Dejános tu comentario!"
-            cols={30} rows={5} className='complete' />
+            cols={30} rows={8} className='complete' />
         </div>
         <span id='send-span'>
           <button type="submit" id='send'> Enviar </button>
