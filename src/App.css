@@ -1,4 +1,6 @@
-body {
+body,
+html {
+    height: 100%;
     padding: 0;
     margin: 0;
     background-color: #F5FBEF;
@@ -21,6 +23,10 @@ body {
         border-bottom-right-radius: 6px;
         border-top-left-radius: 6px;
         font-size: 15px;
+    }
+
+    #message-welcome {
+        font-size: 1.5rem;
     }
 }
 
@@ -50,6 +56,27 @@ body {
         font-size: 15px;
         font-weight: bold;
         display: grid;
+    }
+
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #form {
+        grid-area: auto;
+    }
+
+    #redes {
+        grid-area: auto;
+    }
+
+    #welcome-message {
+        grid-area: auto
+    }
+
+    #welcome-message {
+        font-size: 1.5rem;
     }
 }
 

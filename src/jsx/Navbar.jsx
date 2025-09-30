@@ -63,9 +63,7 @@ export function Viaje() {
 //Contacto
 export function Contacto() {
     return (
-        <>
-            <Contact />
-            <Footer /></>
+        <Contact />
     )
 }
 

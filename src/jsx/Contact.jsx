@@ -46,6 +46,10 @@ export function Contact() {
             onClick={() => window.open('https://www.whatsapp.com', '_blank')}>WhatsApp</button>
         </div>
       </div>
+
+      <div id='welcome-message'>
+        <h1>MEMORIA EN RUTA TE ESPERA!</h1>
+      </div>
     </div>
   );
 }
