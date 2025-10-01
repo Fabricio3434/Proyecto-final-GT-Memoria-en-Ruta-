@@ -9,12 +9,27 @@ html {
 @media (max-width: 950px) {
 
     #container {
+        display: grid;
         min-height: 70vh;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
             "form form redes redes"
+            "form form redes redes"
             "form form welcome welcome";
+    }
+
+    #form {
+        grid-area: form;
+    }
+
+    #redes {
+        grid-area: redes;
+    }
+
+    #welcome-message {
+        grid-area: welcome;
+        font-size: 20px;
     }
 
     #red-button-Facebook,
@@ -27,10 +42,6 @@ html {
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 6px;
         border-top-left-radius: 6px;
-        font-size: 15px;
-    }
-
-    #message-welcome {
         font-size: 15px;
     }
 }
@@ -57,17 +68,36 @@ html {
     #message-welcome {
         font-size: 1.5rem;
     }
+
+    #redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .destino {
         width: 45%;
         margin-bottom: 20px;
     }
+    .subtitle {
+        font-size: 25px;
+    }
+
+    #form {
+        font-size: 15px;
+    }
+
+    #redes {
+        padding-bottom: 0;
+        font-size: 15px;
+    }
 
     #redes-buttons {
+        display: flex;
         flex-direction: block;
-        gap: 30px;
+        gap: 20px;
         align-items: center;
         padding-bottom: 50px;
         height: auto;
@@ -82,30 +112,39 @@ html {
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 4px;
         border-top-left-radius: 4px;
-        font-size: 15px;
+        font-size: 1rem;
         font-weight: bold;
-        display: grid;
+        width: 6rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     #container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        display: grid;
+        height: 60vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "form form redes redes"
+            "form form welcome welcome";
     }
 
     #form {
-        grid-area: auto;
+        grid-area: form;
     }
 
     #redes {
-        grid-area: auto;
+        grid-area: redes;
     }
 
     #welcome-message {
-        grid-area: auto
+        grid-area: welcome;
     }
 
     #welcome-message {
-        font-size: 1.5rem;
+        font-size: 10px;
     }
 }
 
