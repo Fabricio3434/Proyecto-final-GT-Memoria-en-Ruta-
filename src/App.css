@@ -44,6 +44,10 @@ html {
         border-top-left-radius: 6px;
         font-size: 15px;
     }
+
+    .subtitle {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -81,8 +85,9 @@ html {
         width: 45%;
         margin-bottom: 20px;
     }
+
     .subtitle {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #form {
@@ -148,26 +153,90 @@ html {
     }
 }
 
+@media (max-width: 700px) {
+    .navbar-links {
+        display: none
+    }
+
+    .Título {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
 @media (max-width: 600px) {
-    #redes {
-        font-size: 10px;
-        height: auto;
-        width: 90%;
+    #container {
+        display: grid;
+        height: 50vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "form redes"
+            "form welcome";
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     #form {
-        font-size: 10px;
-        width: 90%;
+        grid-area: form;
     }
 
-    #container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    #redes {
+        grid-area: redes;
+    }
+
+    #welcome-message {
+        grid-area: welcome;
+    }
+
+    #redes,
+    #form,
+    #welcome-messagge {
+        font-size: 15px;
+        height: auto;
     }
 
     .subtitle {
-        font-size: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    #container {
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "form"
+            "redes"
+            "welcome";
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #form {
+        grid-area: form;
+    }
+
+    #redes {
+        grid-area: redes;
+    }
+
+    #welcome-message {
+        grid-area: welcome;
+    }
+
+    #redes,
+    #form {
+        font-size: 15px;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
     }
 }
 
@@ -186,12 +255,16 @@ html {
     #red-button-Instagram,
     #red-button-LinkedIn,
     #red-button-WhatsApp {
-        width: 4rem;
+        width: 6rem;
         border-bottom-left-radius: 2rem;
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 6px;
         border-top-left-radius: 6px;
         font-size: 10px;
+    }
+
+    .Título {
+        font-size: 1.2rem;
     }
 }
 
@@ -202,6 +275,18 @@ html {
 .bienvenida p {
     font-size: 16px;
 }
+
+@media (max-width: 350px) {
+    .Título {
+        display: none;
+    }
+
+    .título-cel {
+        display: flex;
+    }
+}
+
+/*Responsive de la página der inicio*/
 
 @media (max-width: 480px) {
     .destino {

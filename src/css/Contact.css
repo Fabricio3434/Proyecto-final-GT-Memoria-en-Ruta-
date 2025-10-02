@@ -2,9 +2,9 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto auto;
-  grid-template-areas: 
-  "form form redes redes redes redes"
-  "form form welcome welcome welcome welcome";
+  grid-template-areas:
+    "form form redes redes redes redes"
+    "form form welcome welcome welcome welcome";
   height: 85vh;
   margin-left: 20px;
   margin-right: 20px;
@@ -23,20 +23,6 @@
   grid-area: welcome;
 }
 
-#welcome-message {
-  background-color: #1B2A41;
-  border-radius: 20px;
-  text-align: center;
-  font-weight: bold;
-  color: #E3C16F;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 #form {
   display: flex;
   flex-direction: column;
@@ -45,6 +31,7 @@
   background-color: #1B2A41;
   padding: 20px;
   padding-top: 12px;
+  font-size: 1.2rem;
 }
 
 label,
@@ -94,7 +81,10 @@ label,
   height: 3rem;
   width: 8rem;
   padding: 0 2rem;
-  border-radius: 1rem;
+  border-bottom-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
   background: linear-gradient(82.3deg,
       rgba(227, 193, 111, 1) 10.8%,
       rgb(184, 147, 63) 94.3%);
@@ -104,8 +94,15 @@ label,
   cursor: pointer;
 }
 
-#send:hover::before {
-  transform: scaleX(1);
+#send:hover {
+  transition: 250ms ease-out;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 4rem;
+  border-top-left-radius: 4rem;
+  background: linear-gradient(135deg,
+      rgb(226, 189, 102) 10.8%,
+      rgb(185, 147, 56) 94.3%);
 }
 
 /*redes sociales*/
@@ -113,14 +110,15 @@ label,
 #redes {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-color: #1B2A41;
-  padding: 20px;
   height: auto;
   color: #e3c16f;
   border-radius: 20px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 #redes-buttons {
@@ -128,9 +126,9 @@ label,
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 20px;
   text-align: center;
   height: auto;
+  padding-top: 30px;
 }
 
 #red-button-Facebook,
@@ -166,7 +164,22 @@ label,
     -13px -13px 100px #1B2A41;
 }
 
-/*Botones Redes Sociales*/
+/*Pequeño mensaje*/
+#welcome-message {
+  background-color: #1B2A41;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #E3C16F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*Animación de los Botones Redes Sociales*/
 #red-button-Facebook:hover {
   transform: scaleY(1.3);
   z-index: 1;

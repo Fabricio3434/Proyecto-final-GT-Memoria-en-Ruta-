@@ -46,3 +46,54 @@
     font-size: 30px;
     font-weight: bold;
  }
+
+
+ .menu a {
+    color: #e3c16f;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+
+ .menu {
+    position: absolute;
+    top: 60px;
+    left: auto;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #1B2A41;
+    padding: 10px;
+    z-index: 2;
+    width: 120px;
+    align-items: flex-end;
+    gap: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 20px;
+
+ }
+
+ .menu.open {
+    display: flex;
+ }
+
+ .hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+    color: #e3c16f;
+ }
+
+ .título-cel {
+    position: absolute;
+    left: 75px;
+    color: #E3C16F;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: none;
+ }
