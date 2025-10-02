@@ -119,6 +119,8 @@ label,
   border-radius: 20px;
   font-weight: bold;
   font-size: 1.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #redes-buttons {
