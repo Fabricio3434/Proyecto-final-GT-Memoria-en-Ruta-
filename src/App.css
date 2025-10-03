@@ -165,6 +165,33 @@ html {
     .hamburger {
         display: flex;
     }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        background-color: #1B2A41;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+        border-bottom-left-radius: 20px;
+
+        transform: translateY(-12px);
+        opacity: 0;
+        pointer-events: none;
+
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 1000;
+    }
+
+    .menu.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
 @media (max-width: 600px) {
