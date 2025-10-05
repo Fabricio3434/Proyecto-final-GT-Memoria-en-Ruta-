@@ -48,6 +48,11 @@ html {
     .subtitle {
         font-size: 25px;
     }
+
+    #s,
+    #close {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 850px) {
@@ -229,6 +234,20 @@ html {
     .subtitle {
         font-size: 20px;
     }
+
+    #s,
+    #close {
+        font-size: 13px;
+    }
+
+    #close {
+        width: 6rem;
+        height: 2rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 2px;
+        border-top-left-radius: 2px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -292,6 +311,10 @@ html {
 
     .Título {
         font-size: 1.2rem;
+    }
+
+    #s {
+        width: 70%;
     }
 }
 
