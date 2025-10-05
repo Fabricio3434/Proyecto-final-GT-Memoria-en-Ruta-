@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 import { DinnerSection, TravelSection } from "./Sections.jsx"
 import { Carrusel } from "./carrusel.jsx"
-
+import {AcercaDeNosotros} from "./Acerca.jsx"
 export function Navbar() {
     return (
         <nav className="Navbar">
@@ -40,6 +40,7 @@ export function Inicio() {
             <Carrusel />
             <DinnerSection />
             <TravelSection />
+            <Footer/>
         </>
     )
 }
@@ -68,7 +69,7 @@ export function Contacto() {
 //Acerca de
 export function AcercaDe() {
     return (
-        <h2>Página Acerca de</h2>
+        <AcercaDeNosotros/>
     )
 }
 

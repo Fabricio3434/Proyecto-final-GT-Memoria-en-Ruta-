@@ -1,3 +1,10 @@
+/*    Colores:
+Azul: #1B2A41
+Blanco. #F5FBEF
+Dorado: #1B2A41
+
+*/
+/* Css del carrusel*/
 .contenedor {
     width: 100%;
     /*max-width: 900px;*/
@@ -52,3 +59,4 @@
   border-radius: 8px;
   font-size: 18px;
 }
+
