@@ -36,8 +36,7 @@ div.photos > img {
     background-color: #1B2A41;
     color: #e3c16f;
     padding: 15px;
-font-size: 20px;
-font-weight: bold;
+    font-size: 20px;
     backface-visibility: hidden;
     transform: rotateY(180deg);
 }
@@ -121,4 +120,44 @@ transform: translate(-50%, -50%);
 }
 #tercero{
     background-color: white;
+}
+#seccion2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#h2{
+    background-color: #e3c16f;
+    color: #1B2A41;
+    height: 2em;
+    text-align: center;
+    width: 40%;
+   border-radius: 20px;
+   font-size: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#alinearh2{
+     margin-top: 140px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#F > li::marker{
+    color: orange;
+}
+#L > li::marker{
+    color: blue;
+}
+#N > li::marker{
+    color: purple;
+}
+#T > li::marker{
+    color: pink;
+}
+#E > li::marker{
+    color: green;
 }

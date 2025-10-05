@@ -3,7 +3,8 @@ import '../css/Acerca.css'
 import cenas from '../private/cenas.jpg'
 import viajes from '../private/viajes.jpg'
 import empresa from '../private/empresa.jpg'
-
+import Avatar from '@mui/material/Avatar'
+import Stack from '@mui/material/Stack'
 export function AcercaDeNosotros() {
 const [voltear, setVoltear] = useState(false)
 const [voltear2, setVoltear2] = useState(false)
@@ -77,6 +78,53 @@ ver más
         </button>
         </div>
       </div>
+      </section>
+      <div id='alinearh2'>
+      <h2 id='h2'> Fundadores </h2>
+      </div>
+      <section id='seccion2'>
+        <Stack direction="row" spacing={6}>
+        <Avatar
+        sx={{width: 80, height: 80, margin:50, fontSize: 40, backgroundColor: 'orange'}}
+        >F</Avatar>
+       <ul id='F'>
+        <li>Fabri</li>
+        <li> Referente</li>
+        <li>Navbar</li>
+        <li>Pág.Contactos</li>
+       </ul>
+   
+        <Avatar
+        sx={{width: 80, height:80, fontSize: 40, backgroundColor: 'blue' }}
+        >L</Avatar>
+        <ul id='L'>
+          <li>Luci</li>
+          <li>Carrusel de img</li>
+          <li>Pág. Acerca De</li>
+        </ul>
+        <Avatar
+         sx={{width: 80, height:80, fontSize: 40, backgroundColor: 'purple' }}
+        >N</Avatar>
+        <ul id='N'>
+          <li>Nanu</li>
+          <li>Secciones de cenas y viajes</li>
+          <li>Footer</li>
+        </ul>
+        <Avatar
+         sx={{width: 80, height:80, fontSize: 40, backgroundColor: 'pink' }}
+        >T</Avatar>
+        <ul id='T'>
+          <li>Tizi</li>
+          <li>...</li>
+        </ul>
+        <Avatar
+         sx={{width: 80, height:80, fontSize: 40, backgroundColor: 'green' }}
+        >E</Avatar>
+        <ul id='E'>
+          <li>Ezequiel</li>
+          <li>...</li>
+        </ul>
+        </Stack>
       </section>
     </>
   )
