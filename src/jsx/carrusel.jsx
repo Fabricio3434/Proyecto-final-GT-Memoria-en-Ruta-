@@ -61,16 +61,16 @@ export function Carrusel() {
 
 //Botones
 //Botón izquierdo
-export function Botoni({onClick}){
+export function Botoni({ onClick }) {
     return (
-        <button onClick={onClick} className="botones" id="izq"> P </button>
+        <button onClick={onClick} className="botones" id="izq"> 🡸 </button>
     )
 }
 
 //Botón derecho
-export function Botond({onClick}){
-    return(
-        <button onClick={onClick} className="botones" id="der"> A </button>
+export function Botond({ onClick }) {
+    return (
+        <button onClick={onClick} className="botones" id="der"> 🡺 </button>
     )
 }
 

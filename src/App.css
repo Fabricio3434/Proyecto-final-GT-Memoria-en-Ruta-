@@ -6,6 +6,7 @@ html {
     background-color: #F5FBEF;
 }
 
+/* Configuración responsive para la página de contacto */
 @media (max-width: 950px) {
 
     #container {
@@ -316,7 +317,19 @@ html {
     #s {
         width: 70%;
     }
+
+    @media (max-width: 350px) {
+        .Título {
+            display: none;
+        }
+
+        .título-cel {
+            display: flex;
+        }
+    }
 }
+
+/*------------------------------------------------------------------------------------------*/
 
 .bienvenida h1 {
     font-size: 28px;
@@ -326,17 +339,7 @@ html {
     font-size: 16px;
 }
 
-@media (max-width: 350px) {
-    .Título {
-        display: none;
-    }
-
-    .título-cel {
-        display: flex;
-    }
-}
-
-/*Responsive de la página der inicio*/
+/*Responsive de la página de inicio*/
 
 @media (max-width: 480px) {
     .destino {
@@ -350,5 +353,13 @@ html {
 
     .bienvenida p {
         font-size: 14px;
+    }
+}
+
+/* Responsive del carrusel */
+
+@media (max-width: 600px) {
+    .carrusel {
+        height: 400px;
     }
 }

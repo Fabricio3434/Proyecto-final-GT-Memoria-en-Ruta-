@@ -14,8 +14,8 @@ export function Navbar() {
                 <div className="minibar-box">
                     <img src="./img/Navbar-logo.png" className="navbar-logo" alt="" />
                 </div>
-                <h1 className="Título">MEMORIA EN RUTA</h1>
-                <h1 className="título-cel">MER</h1>
+                <h1 className="Título">MEMORIA EN RUTA</h1>{/* Título de la nabvar para pantallas normales */}
+                <h1 className="título-cel">MER</h1>{/* Título de la nabvar para pantallas pequeñas */}
                 <div className="navbar-links">
                     <Link className="navbar-link" to="/home">
                         <Home sx={{ color: "#E3C16F" }} />
@@ -34,6 +34,7 @@ export function Navbar() {
                     </Link>
                 </div>
 
+                {/*Botón desplegable para pantallas pequeñas*/}
                 <button className="hamburger" onClick={() => setIsOpen(!isOpen)}   >
                     ☰
                 </button>
@@ -69,7 +70,7 @@ export function Navbar() {
 }
 
 //Secciones de la navbar
-//Home
+//Inicio
 export function Inicio() {
     return (
         <>
@@ -113,7 +114,7 @@ export function AcercaDe() {
 export function Footer() {
     return (
         <footer className="footer">
-            <div id="agradecimientos">
+            <div>
                 <p>Créditos y agradecimientos a:</p>
                 <ul>
                     <li>El profe Lucho</li>
@@ -124,7 +125,7 @@ export function Footer() {
                     <li>Ezequiel</li>
                 </ul>
             </div>
-            <div id="copyright">
+            <div>
                 © 2025 Memoria en Ruta - Todos los derechos reservados
             </div>
         </footer>

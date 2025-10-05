@@ -52,7 +52,6 @@
 #s {
   padding: 30px;
   background-color: #1B2A41;
-  color: #E3C16F;
   width: 50%;
   height: auto;
   border-radius: 20px;
@@ -94,7 +93,6 @@
 label,
 .subtitle {
   font-weight: bold;
-  color: #E3C16F;
 }
 
 .complete {
@@ -108,7 +106,6 @@ label,
   justify-content: center;
   margin-left: 12px;
   margin-top: 5px;
-  color: #E3C16F;
   font-weight: bold;
   box-sizing: border-box;
   width: 90%;
@@ -172,7 +169,6 @@ label,
   text-align: center;
   background-color: #1B2A41;
   height: auto;
-  color: #e3c16f;
   border-radius: 20px;
   font-weight: bold;
   font-size: 1.5rem;
@@ -229,7 +225,6 @@ label,
   border-radius: 20px;
   text-align: center;
   font-weight: bold;
-  color: #E3C16F;
   display: flex;
   align-items: center;
   justify-content: center;
