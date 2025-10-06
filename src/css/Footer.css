@@ -3,3 +3,7 @@
     text-align: start;
     padding: 20px;
 }
+
+.footer li {
+    margin-bottom: 10px;
+}
