@@ -1,5 +1,6 @@
 import '../css/Sections.css'
 import '../css/Footer.css'
+import { Link } from "react-router-dom";
 
 //Sección de cenas
 export function DinnerSection() {
@@ -17,8 +18,8 @@ export function DinnerSection() {
 
                     <div className="destinos">
                         <div className="destino">
-                            <img src="https://via.placeholder.com/250x150" alt="Cena 1" />
-                            <h3>Cena en Buenos Aires</h3>
+                            <img src="https://via.placeholder.com/250x150" alt="Cena 2" />
+                            <h3>Cena en Córdoba</h3>
                         </div>
                         <div className="destino">
                             <img src="https://via.placeholder.com/250x150" alt="Cena 2" />
@@ -29,9 +30,12 @@ export function DinnerSection() {
                             <h3>Cena en Rosario</h3>
                         </div>
                     </div>
+                    <Link to="/travel">
+                        <button id="organize">Organizar mi cena!</button>
+                    </Link>
                 </section>
             </div>
-        </div>
+        </div >
     )
 }
 
@@ -59,6 +63,9 @@ export function TravelSection() {
                             <h3>Tokio</h3>
                         </div>
                     </div>
+                    <Link to="/travel">
+                        <button id="organize">Organizar mi viaje!</button>
+                    </Link>
                 </section>
             </div>
         </div>
