@@ -363,3 +363,21 @@ html {
         height: 400px;
     }
 }
+
+@media (max-width: 500px) {
+    .carrusel {
+        height: 250px;
+    }
+
+    #organize {
+        height: 2.5rem;
+        width: 8.5rem;
+        font-size: 0.8rem;
+    }
+
+    #d-t {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -248,7 +248,7 @@ export function AcercaDeNosotros() {
         setVoltear3(!voltear3)
     }
     return (
-        <>
+        <div>
             <section className='acomodar'>
                 <div className="envase">
                     <div className={`carta ${voltear ? "voltear" : ""}`}>
@@ -355,7 +355,7 @@ export function AcercaDeNosotros() {
                     </ul>
                 </Stack>
             </section>
-        </>
+        </div>
     )
 }
 

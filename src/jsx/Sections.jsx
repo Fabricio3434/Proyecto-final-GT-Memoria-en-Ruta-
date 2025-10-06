@@ -30,7 +30,7 @@ export function DinnerSection() {
                             <h3>Cena en Rosario</h3>
                         </div>
                     </div>
-                    <Link to="/travel">
+                    <Link to="/dinner">
                         <button id="organize">Organizar mi cena!</button>
                     </Link>
                 </section>
