@@ -4,34 +4,37 @@ Blanco. #F5FBEF
 Dorado: #e3c16f
 Celeste: #0d324d
 */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:#F5FBEF
-
+body {
+    background-color: #F5FBEF
 }
 
-.photos{
-position: absolute;
-inset: 0;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-  aspect-ratio: 1/1;
-  border: solid #e3c16f 7px;
-  height: 480px;
-  width: 480px;
-  backface-visibility: hidden;
+.photos {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    border: solid #e3c16f 7px;
+    height: 480px;
+    width: 480px;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
 }
-div.photos > img {
+
+div.photos>img {
     height: 100%;
     width: 100%;
 }
+
 .atras {
     background-color: #1B2A41;
     color: #e3c16f;
@@ -46,7 +49,8 @@ div.photos > img {
     width: 30em;
     height: 30em;
 }
-.carta{
+
+.carta {
     transform-style: preserve-3d;
     transition: all 0.8s ease;
     position: relative;
@@ -54,25 +58,29 @@ div.photos > img {
     height: 100%;
     transform-origin: center;
 }
-.adelante > img{
+
+.adelante>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.carta.voltear{
-transform: rotateY(180deg);
+
+.carta.voltear {
+    transform: rotateY(180deg);
 }
-.girar{
-margin-top: 10px;
-width: 130px;
-height: 40px;
-border-radius: 10px;
-background-color: #e3c16f;
-color: #1B2A41;
-font-weight: bold;
-border: solid #1B2A41 3px;
+
+.girar {
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #e3c16f;
+    color: #1B2A41;
+    font-weight: bold;
+    border: solid #1B2A41 3px;
 }
-.girar:hover{
+
+.girar:hover {
     background-color: #1B2A41;
     color: #e3c16f;
     transform: scale(1.2);
@@ -90,74 +98,87 @@ border: solid #1B2A41 3px;
 }
 
 .titulo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-transform: translate(-50%, -50%);
-  color:#1B2A41 ;
-  font-size: 2em;
-  font-weight: bold;
-  z-index: 2;
-  opacity: 1;
-  transition: opacity 0.6s ease;
-  pointer-events: none; 
-  padding: 5px;
-  border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1B2A41;
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+    padding: 5px;
+    border-radius: 4px;
 }
+
 .carta.voltear .titulo {
-  opacity: 0;
+    opacity: 0;
 }
-.centrarboton{
+
+.centrarboton {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #primero {
-   background-color: white;
-}
-#segundo{
-    background-color: #e3c16f;
-}
-#tercero{
     background-color: white;
 }
-#seccion2{
+
+#segundo {
+    background-color: #e3c16f;
+}
+
+#tercero {
+    background-color: white;
+}
+
+#seccion2 {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-#h2{
+
+#h2 {
     background-color: #e3c16f;
     color: #1B2A41;
     height: 2em;
     text-align: center;
     width: 40%;
-   border-radius: 20px;
-   font-size: 30px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-#alinearh2{
-     margin-top: 140px;
+    border-radius: 20px;
+    font-size: 30px;
     display: flex;
-   justify-content: center;
-   align-items: center;
+    align-items: center;
+    justify-content: center;
 }
-#F > li::marker{
+
+#alinearh2 {
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#F>li::marker {
     color: orange;
 }
-#L > li::marker{
+
+#L>li::marker {
     color: blue;
 }
-#N > li::marker{
+
+#N>li::marker {
     color: purple;
 }
-#T > li::marker{
+
+#T>li::marker {
     color: pink;
 }
-#E > li::marker{
+
+#E>li::marker {
     color: green;
 }
