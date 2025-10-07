@@ -5,6 +5,8 @@ Dorado: #e3c16f
 Celeste: #0d324d
 */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,11 +23,9 @@ body {
     align-items: center;
     aspect-ratio: 1/1;
     border: solid #e3c16f 7px;
-    height: 480px;
-    width: 480px;
+    height: auto;
+    width: 100%;
     backface-visibility: hidden;
-    border-radius: 20px;
-    overflow: hidden;
 }
 
 div.photos>img {
@@ -44,8 +44,10 @@ div.photos>img {
 
 .envase {
     position: relative;
-    width: 30em;
-    height: 30em;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1/1;
 }
 
 .carta {
@@ -88,9 +90,9 @@ div.photos>img {
 
 .acomodar {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
     justify-items: center;
     align-items: center;
 }
