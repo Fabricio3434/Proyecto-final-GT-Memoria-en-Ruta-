@@ -1,14 +1,15 @@
 import "../css/Navbar.css";
 import '../css/Contact.css'
 import '../css/Acerca.css'
+import '../css/Cena&Viaje.css'
 import { cenas, viajes, empresa } from '../private'
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Avatar from '@mui/material/Avatar'
-import Stack from '@mui/material/Stack'
+import { Avatar, Stack } from '@mui/material'
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 import { DinnerSection, TravelSection } from "./Sections.jsx";
 import { Carrusel } from "./carrusel.jsx";
+import { Dinners, Travel } from './Cena&Viaje.jsx'
 import emailjs from "emailjs-com";
 
 export function Navbar() {
@@ -90,14 +91,14 @@ export function Inicio() {
 //Cena
 export function Cena() {
     return (
-        <h2>Página de cena</h2>
+        <Dinners />
     )
 }
 
 //Viaje
 export function Viaje() {
     return (
-        <h2>Página de viaje</h2>
+        <Travel />
     )
 }
 
@@ -248,7 +249,7 @@ export function AcercaDeNosotros() {
         setVoltear3(!voltear3)
     }
     return (
-        <div>
+        <>
             <section className='acomodar'>
                 <div className="envase">
                     <div className={`carta ${voltear ? "voltear" : ""}`}>
@@ -312,7 +313,11 @@ export function AcercaDeNosotros() {
                 <h2 id='h2'> Fundadores </h2>
             </div>
             <section id='seccion2'>
-                <Stack direction="row" spacing={6}>
+                <Stack direction={{ xs: "column", sm: "row" }}
+                    spacing={6}
+                    alignItems="center"
+                    justifyContent="center"
+                >
                     <Avatar
                         sx={{ width: 80, height: 80, margin: 50, fontSize: 40, backgroundColor: 'orange' }}
                     >F</Avatar>
@@ -355,7 +360,7 @@ export function AcercaDeNosotros() {
                     </ul>
                 </Stack>
             </section>
-        </div>
+        </>
     )
 }
 
