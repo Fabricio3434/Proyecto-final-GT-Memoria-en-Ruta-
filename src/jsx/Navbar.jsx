@@ -249,7 +249,7 @@ export function AcercaDeNosotros() {
         setVoltear3(!voltear3)
     }
     return (
-        <div>
+        <>
             <section className='acomodar'>
                 <div className="envase">
                     <div className={`carta ${voltear ? "voltear" : ""}`}>
@@ -316,7 +316,8 @@ export function AcercaDeNosotros() {
                 <Stack direction={{ xs: "column", sm: "row" }}
                     spacing={6}
                     alignItems="center"
-                    justifyContent="center">
+                    justifyContent="center"
+                >
                     <Avatar
                         sx={{ width: 80, height: 80, margin: 50, fontSize: 40, backgroundColor: 'orange' }}
                     >F</Avatar>
@@ -359,7 +360,7 @@ export function AcercaDeNosotros() {
                     </ul>
                 </Stack>
             </section>
-        </div>
+        </>
     )
 }
 

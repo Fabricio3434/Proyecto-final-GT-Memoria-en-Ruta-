@@ -18,8 +18,8 @@
 .book {
     position: relative;
     border-radius: 20px;
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     background-color: #0D324D;
     box-shadow: 1px 1px 12px #969696;
     transform: preserve-3d;
@@ -57,7 +57,7 @@
 }
 
 .book p {
-    font-size: 12px;
+    font-size: 1,5rem;
     font-weight: bolder;
     margin: 8px;
 }
@@ -65,4 +65,8 @@
 .cover p {
     font-size: 2rem;
     font-weight: bolder;
+}
+
+#org {
+    width: 100px;
 }

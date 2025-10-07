@@ -13,23 +13,9 @@ export function Dinners() {
                     <img src={avion} alt="" />
                     <p>Precio: $80.000</p>
                     <p>Ubicación: Bs. As, Cdad. Autónoma de Bs As</p>
-                    <button>ds</button>
+                    <button id='org'>ds</button>
                     <div class="cover">
                         <p>Cena en Buenos Aires</p>
-                    </div>
-                </div>
-
-                <div class="book">
-                    <p>Hello</p>
-                    <div class="cover">
-                        <p>Cena en</p>
-                    </div>
-                </div>
-
-                <div class="book">
-                    <p>Hello</p>
-                    <div class="cover">
-                        <p>Cena en</p>
                     </div>
                 </div>
 
