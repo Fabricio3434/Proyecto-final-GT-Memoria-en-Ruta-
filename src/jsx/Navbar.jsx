@@ -89,14 +89,14 @@ export function Inicio() {
 //Cena
 export function Cena() {
     return (
-        <Dinners />
+        <h2>Página de cena (en progreso) </h2>
     )
 }
 
 //Viaje
 export function Viaje() {
     return (
-        <Travel />
+       <h2>Página de viaje (en progreso) </h2>
     )
 }
 
