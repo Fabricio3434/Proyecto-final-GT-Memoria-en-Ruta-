@@ -1,7 +1,6 @@
 import "../css/Navbar.css";
 import '../css/Contact.css'
 import '../css/Acerca.css'
-import '../css/Cena&Viaje.css'
 import { cenas, viajes, empresa } from '../private'
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -9,7 +8,6 @@ import { Avatar, Stack } from '@mui/material'
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 import { DinnerSection, TravelSection } from "./Sections.jsx";
 import { Carrusel } from "./carrusel.jsx";
-import { Dinners, Travel } from './Cena&Viaje.jsx'
 import emailjs from "emailjs-com";
 
 export function Navbar() {
