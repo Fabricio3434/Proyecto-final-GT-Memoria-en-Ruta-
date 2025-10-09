@@ -1,9 +1,7 @@
 import { useRef } from 'react'
 import '../css/Carrusel.css'
 //las fotos
-import avion from '../private/avion.jpg'
-import banana from '../private/banana.jpg'
-import codri from '../private/codri.jpg'
+import { avion, banana, codri } from '../js/image.js'
 
 //El carrusel
 export function Carrusel() {
