@@ -2,7 +2,9 @@ import '../css/Navbar.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
-import { AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer } from '../js/componentes'
+import {
+    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer, DinnerCards
+} from '../js/componentes'
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +85,7 @@ export function Inicio() {
 //Cena
 export function Cena() {
     return (
-        <h2>Página de cena (en progreso) </h2>
+        <DinnerCards />
     )
 }
 
