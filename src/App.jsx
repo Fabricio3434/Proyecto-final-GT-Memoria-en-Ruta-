@@ -1,4 +1,6 @@
-import { Navbar, Inicio, Cena, Viaje, AcercaDe, Contacto } from './jsx/Navbar.jsx'
+import {
+  Navbar, Inicio, Cena, Viaje, AcercaDe, Contacto, OrganizarC, OrganizarV
+} from './jsx/Navbar.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 
@@ -14,6 +16,8 @@ function App() {
           <Route path="/travel" element={<Viaje />} />
           <Route path="/about" element={<AcercaDe />} />
           <Route path="/contact" element={<Contacto />} />
+          <Route path="organizeDinner" element={<OrganizarC />} />
+          <Route path="organizeTravel" element={<OrganizarV />} />
         </Routes>
       </BrowserRouter>
     </>

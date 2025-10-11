@@ -2,7 +2,10 @@ import '../css/Navbar.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
-import { AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer } from '../js/componentes'
+import {
+    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer,
+    OrganizarCena, OrganizarViaje
+} from '../js/componentes'
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -83,14 +86,14 @@ export function Inicio() {
 //Cena
 export function Cena() {
     return (
-        <h2>Página de cena (en progreso) </h2>
+        <OrganizarCena />
     )
 }
 
 //Viaje
 export function Viaje() {
     return (
-        <h2>Página de viaje (en progreso) </h2>
+        <OrganizarViaje />
     )
 }
 
@@ -107,5 +110,21 @@ export function Contacto() {
 export function AcercaDe() {
     return (
         <AcercaDeNosotros />
+    )
+}
+
+//Sub páginas
+
+//Cena
+export function OrganizarC() {
+    return (
+        <h1>Aquí va el formulario de cena</h1>
+    )
+}
+
+//Viaje
+export function OrganizarV() {
+    return (
+        <h1>Aquí va el formulario de viaje</h1>
     )
 }

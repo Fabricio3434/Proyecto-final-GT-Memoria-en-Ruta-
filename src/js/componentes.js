@@ -3,5 +3,9 @@ import { Carrusel } from '../jsx/carrusel.jsx'
 import { Contact } from '../jsx/Contacto.jsx'
 import { DinnerSection, TravelSection } from '../jsx/Sections.jsx'
 import { Footer } from '../jsx/Footer.jsx'
+import { OrganizarCena, OrganizarViaje } from '../jsx/Cena&Viaje.jsx'
 
-export { AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer };
+export {
+    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer,
+    OrganizarCena, OrganizarViaje
+};
