@@ -92,7 +92,7 @@ export function Cena() {
 //Viaje
 export function Viaje() {
     return (
-        <h2>Página de viaje (en progreso) </h2>
+        <h2>Página de Viaje</h2>
     )
 }
 

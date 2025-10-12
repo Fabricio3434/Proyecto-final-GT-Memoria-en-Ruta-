@@ -1,6 +1,5 @@
  /* Estilos de la navbar */
  .Navbar {
-    margin-bottom: 12px;
     padding: 0px;
     width: 100%;
     height: 60px;
@@ -60,7 +59,8 @@
     top: 60px;
     left: auto;
     right: 0;
-    display: none; /* Evitamos que se muestre en pantallas normales */
+    display: none;
+    /* Evitamos que se muestre en pantallas normales */
     flex-direction: column;
     background-color: #1B2A41;
     padding: 10px;

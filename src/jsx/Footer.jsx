@@ -10,8 +10,6 @@ export function Footer() {
                     <li>Fabricio Vedia Vega ---- (Fabri)</li>
                     <li>Lucia Mamanis ---- (Luci)</li>
                     <li>Nahuel Menrath ---- (Nanu)</li>
-                    <li>Tizina Acosta ---- (Tizi)</li>
-                    <li>Ezequiel Claveriz ---- (Eze)</li>
                 </ul>
             </div>
             <div>
