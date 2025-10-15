@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 import {
     AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer,
-    OrganizarCena, OrganizarViaje
+    OrganizarCena, OrganizarViaje, Organizar, Organizar2
 } from '../js/componentes'
 
 export function Navbar() {
@@ -118,13 +118,14 @@ export function AcercaDe() {
 //Cena
 export function OrganizarC() {
     return (
-        <h1>Aquí va el formulario de cena</h1>
+
+       <Organizar/> 
     )
 }
 
 //Viaje
 export function OrganizarV() {
     return (
-        <h1>Aquí va el formulario de viaje</h1>
+       <Organizar2/>
     )
 }
