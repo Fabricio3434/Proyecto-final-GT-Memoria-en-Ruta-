@@ -7,7 +7,11 @@ import codri from '../private/codri.jpg'
 import cenaBronce from '../private/Cena-Bronce.png'
 import cenaPlata from '../private/Cena-Plata.png'
 import cenaOro from '../private/Cena-Oro.png'
+import viajeAmérica from '../private/Viaje América.png'
+import viajeEuropa from '../private/Viaje Europa.png'
+import viajeOceanía from '../private/viaje Oceanía.png'
 
-
-
-export { cenas, viajes, empresa, avion, banana, codri, cenaBronce, cenaPlata, cenaOro };
+export {
+    cenas, viajes, empresa, avion, banana, codri, cenaBronce, cenaPlata, cenaOro,
+    viajeAmérica, viajeEuropa, viajeOceanía
+};

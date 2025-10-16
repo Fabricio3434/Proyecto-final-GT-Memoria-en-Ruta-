@@ -104,11 +104,8 @@
 }
 
 #info {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
+    padding: 10px 50px 0 50px;
     font-size: 1rem;
-    font-weight: bolder;
     text-align: left;
 }
 
@@ -119,4 +116,74 @@
 #org-conteiner {
     text-align: left;
     padding-left: 50px;
+}
+
+/*Página de Viajes*/
+.americaTrip,
+.europeTrip,
+.oceaniaTrip {
+    position: relative;
+    border-radius: 20px;
+    width: 450px;
+    height: 300px;
+    background-color: #0D324D;
+    box-shadow: 1px 1px 12px #969696;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.americaTrip img,
+.europeTrip img,
+.oceaniaTrip img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(20px, -10px);
+}
+
+.americaTrip p,
+.europeTrip p,
+.oceaniaTrip p {
+    padding: 10px 35px 10px 35px;
+    font-size: 1rem;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Carteles de arriba*/
+
+.tripSet::before {
+    color: #1B2A41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 450px;
+    padding: 10px 0;
+    background: linear-gradient(82.3deg,
+            rgb(245, 208, 111) 10.8%,
+            rgb(186, 120, 2) 94.3%);
+    transform: translateY(-200px);
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.americaTrip::before {
+    content: "SET AMÉRICA";
+}
+
+.europeTrip::before {
+    content: "SET EUROPA";
+}
+
+.oceaniaTrip::before {
+    content: "SET OCEANÍA";
 }

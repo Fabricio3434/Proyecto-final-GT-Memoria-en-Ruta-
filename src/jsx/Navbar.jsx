@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 import {
-    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer, DinnerCards
+    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer, DinnerCards,
+    TravelCards
 } from '../js/componentes'
 
 export function Navbar() {
@@ -92,7 +93,7 @@ export function Cena() {
 //Viaje
 export function Viaje() {
     return (
-        <h2>Página de Viaje</h2>
+        <TravelCards />
     )
 }
 
