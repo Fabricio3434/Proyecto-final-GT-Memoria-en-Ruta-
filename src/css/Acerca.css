@@ -157,9 +157,4 @@ transform: translate(-50%, -50%);
 #N > li::marker{
     color: purple;
 }
-#T > li::marker{
-    color: pink;
-}
-#E > li::marker{
-    color: green;
-}
+

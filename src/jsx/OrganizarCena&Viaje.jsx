@@ -1,5 +1,6 @@
 
 import {useLocalStorage} from './useLocalStorage'
+import '../css/Formularios.css'
 export function Organizar (){
 const provincias = ["Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba", "Corrientes", "Entre Ríos", "Formosa",
   "Jujuy", "La Pampa", "La Rioja", "Mendoza", "Misiones", "Neuquen", "Río Negro", "Salta", "San Juan", "San Luis", 
@@ -9,7 +10,8 @@ const [info, setInfo] = useLocalStorage('info', {
 nombre: " ",
 email: " ",
 cena: " ",
-provincia: " "
+provincia: " ",
+indicaciones: ""
 })
 const guardar = (e)=>{
   const {name, value} = e.target
@@ -17,8 +19,17 @@ const guardar = (e)=>{
 }
     return(
        <>
-       <form>
-      <div>
+       <section className='indicar'>
+        <h2>¡Completa el formulario para iniciar con Memoria en Ruta!</h2>
+        <p>Completa el formulario con tus preferencias y contacto, a lo largo de los
+          próximos cinco días hábiles, la empresa se pondrá en contacto para poder empezar a organizar la cena de tus sueños.
+        </p>
+       </section>
+       <section className="alinear">
+       <form className='Formulario'>
+      <fieldset className='field'>
+      <legend>Datos de contacto</legend>
+      <div className='color'>
         <input type="text" 
         placeholder='Introducir nombre'
         name='nombre'
@@ -27,17 +38,21 @@ const guardar = (e)=>{
         />
       </div>
       {/* */}
-      <div>
+      <div className='color'>
         <input type="email" 
+        placeholder='Introducir email'
         name='email'
         value={info.email}
         onChange={guardar}
         required
         />
       </div>
-      {/* */}
-    <div className="dinner">
-      <label htmlFor="cenas"> Elegí tu cena </label>
+      </fieldset>
+      {/* */} 
+      <fieldset className='field'>
+      <legend>Sobre tu cena</legend>
+    <div>
+      <label htmlFor="cenas" className='la'> Elegí tu cena </label>
        <select name="cena" id="C"
        value={info.cena}
        onChange={guardar}
@@ -49,8 +64,8 @@ const guardar = (e)=>{
        </select>
        </div>
        {/* */}
-       <div className="lugar">
-       <label htmlFor="provincia">Escoge tu provincia</label>
+       <div>
+       <label htmlFor="provincia" className='la'>Escoge tu provincia</label>
 <select name="provincia" id="P"
 value={info.provincia}
 onChange={guardar}
@@ -61,16 +76,25 @@ required
 ))}
 </select>
 </div>
-<ul>
+
+  <label htmlFor="indicaciones" className="la">¿Algunas especificaciones que debamos saber?</label>
+  <div className='alinear2'>
+  <textarea id='t' name="indicaciones" placeholder='Alergías, Condiciones Médicas. Caso contrario indicar simplemente "no"' 
+  maxLength={50} 
+  value={info.indicaciones} onChange={guardar}></textarea>
+</div>
+</fieldset>
+<ul className='ul'>
   <h5>Verifica que la información sea correcta, antes de enviar</h5>
-  <li>{info.nombre}</li>
-  <li>{info.email}</li>
-  <li>{info.cena}</li>
-  <li>{info.provincia}</li>
+  <li>Nombre: {info.nombre}</li>
+  <li>Email: {info.email}</li>
+  <li>Cena: {info.cena}</li>
+  <li>Provincia: {info.provincia}</li>
+  <li>Indicaciones médicas: {info.indicaciones}</li>
 </ul>
 
-<div className="enviar">
-<input 
+<div >
+<input className="envio"
 type="submit" 
 value="enviar" 
 />
@@ -78,6 +102,7 @@ value="enviar"
 
 {/* Div del contenedor*/}
  </form>
+ </section>
        </>
     )
 }

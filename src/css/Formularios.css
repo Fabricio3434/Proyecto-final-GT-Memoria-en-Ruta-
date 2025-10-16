@@ -1,0 +1,92 @@
+/*    Colores:
+Azul: #1B2A41
+Blanco. #F5FBEF
+Dorado: #e3c16f
+Celeste: #0d324d
+*/
+.alinear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 6px solid #e3c16f;
+    width: 40%;
+font-size: 20px;
+gap: 10px;
+background-color: #1b2a41;
+padding: 5px;
+
+}
+legend{
+    font-weight: bolder;
+    font-style: italic;
+    color: #e3c16f;
+}
+.field{
+    border: 5px ridge #e3c16f;
+    padding: 7px;
+    width: 80%;
+}
+.la{
+    font-weight: normal;
+}
+.color > input{
+    background-color: #e3c16f;
+    color: #1b2a41;
+    width: 70%;
+}
+select{
+    width: 50%;
+    margin: 7px;
+    background-color: #e3c16f;
+    color: #1b2a41;
+
+}
+select > option{
+    color: #1b2a41;
+}
+.indicar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.indicar > p{
+    background-color: #e3c16f;
+    color: #1b2a41;
+    height: 25px;
+    text-align: center;
+    margin-top: 8px;
+    border-radius: 20px;
+}
+.envio{
+    background-color: #e3c16f;
+    color: #1b2a41;
+width: 10em;
+height: 1.5em;
+border-radius: 5px;
+}
+.envio:hover{
+    scale: 1.2;
+}
+#t{
+    width: 80%;
+    margin: 7px;
+}
+.alinear2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul > li{
+    margin: 5px;
+}
