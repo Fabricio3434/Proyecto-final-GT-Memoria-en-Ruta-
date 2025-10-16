@@ -3,8 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
 import {
-    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer, DinnerCards,
-    TravelCards
+    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer
 } from '../js/componentes'
 
 export function Navbar() {
@@ -21,12 +20,13 @@ export function Navbar() {
                     <Link className="navbar-link" to="/home">
                         <Home sx={{ color: "#E3C16F" }} />
                     </Link>
-                    <Link className="navbar-link" to="/dinner">
+                    {/*  <Link className="navbar-link" to="/dinner">
                         <Flatware sx={{ color: "#E3C16F" }} />
                     </Link>
-                    <Link className="navbar-link" to="/travel">
+                       <Link className="navbar-link" to="/travel">
                         <Luggage sx={{ color: "#E3C16F" }} />
                     </Link>
+                    */}
                     <Link className="navbar-link" to="/contact">
                         <Person sx={{ color: "#E3C16F" }} />
                     </Link>
@@ -40,7 +40,7 @@ export function Navbar() {
                     ☰
                 </button>
 
-            </nav>
+            </nav >
 
             <div id="boton-desplegable">
                 <div className={`menu ${isOpen ? "open" : ""}`}>
@@ -48,14 +48,14 @@ export function Navbar() {
                         Inicio
                         <Home sx={{ color: "inherit" }} />
                     </Link>
-                    <Link to="/dinner" onClick={() => setIsOpen(false)}>
+                    {/* <Link to="/dinner" onClick={() => setIsOpen(false)}>
                         Cenas
                         <Flatware sx={{ color: "#E3C16F" }} />
                     </Link>
                     <Link to="/travel" onClick={() => setIsOpen(false)}>
                         Viajes
                         <Luggage sx={{ color: "#E3C16F" }} />
-                    </Link>
+                    </Link> */}
                     <Link to="/contact" onClick={() => setIsOpen(false)}>
                         Contacto
                         <Person sx={{ color: "#E3C16F" }} />
@@ -83,7 +83,7 @@ export function Inicio() {
     )
 }
 
-//Cena
+{/* //Cena
 export function Cena() {
     return (
         <DinnerCards />
@@ -95,7 +95,7 @@ export function Viaje() {
     return (
         <TravelCards />
     )
-}
+} */}
 
 //Contacto
 

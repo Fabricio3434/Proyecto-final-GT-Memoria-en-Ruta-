@@ -81,17 +81,7 @@
   text-align: center;
 }
 
-#close:hover {
-  transform: scaleY(1.3);
-  z-index: 1;
-  transition: 250ms ease-out;
-  background: linear-gradient(135deg,
-      rgb(252, 207, 102) 10%,
-      rgb(227, 193, 111) 80%);
-  box-shadow: 13px 13px 20px rgb(167, 139, 76);
-}
-
-label,
+#label,
 .subtitle {
   font-weight: bold;
 }

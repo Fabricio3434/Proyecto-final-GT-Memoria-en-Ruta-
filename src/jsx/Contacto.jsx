@@ -21,8 +21,14 @@ export function Contact() {
         //Función para testear que nombre y apellido empiecen con mayúsculas
         const startsWithUpper = (str) => /^[A-Z]/.test(str);
 
+        //Función que comprueba si el Email cuenta con los dominios indicados
+        const dominiosValidos = ["@gmail.com", "@hotmail", "@icloud.com"];
+
+        //Se crea una función que verifica si dominiosValidos es true
+        const emailValido = dominiosValidos.some(d => email.includes(d));
+
         //Cóndiciones que se deben cumplir si o si para que el formulario se considere válido
-        if (!startsWithUpper(nombre) || !startsWithUpper(apellido) || !email.includes("@")) {
+        if (!startsWithUpper(nombre) || !startsWithUpper(apellido) || !emailValido) {
             setError(true); //Si algo no se cumple renderizamos Error
             setEnviando(false); //Ocultamos Enviando
             return;
@@ -50,22 +56,22 @@ export function Contact() {
             <form id='form' onSubmit={handleSubmit}>
                 <h2 className='subtitle'>Contactanos, tu opinion es valiosa!</h2>
                 <div>
-                    <label htmlFor="Name">Nombre</label>
+                    <label id='label' htmlFor="Name">Nombre</label>
                     <input type="text" id="Name" name="Name" placeholder="Nombre (A-Z)"
                         className='complete' />
                 </div>
                 <div>
-                    <label htmlFor="Apellido">Apellido</label>
+                    <label id='label' htmlFor="Apellido">Apellido</label>
                     <input type="text" id="Apellido" name="Apellido" placeholder="Apellido (A-Z)"
                         className='complete' />
                 </div>
                 <div>
-                    <label htmlFor="Email">Email</label>
+                    <label id='label' htmlFor="Email">Email</label>
                     <input type="text" id="Email" name="Email" placeholder="Email (@)"
                         className='complete' />
                 </div>
                 <div>
-                    <label htmlFor="Message">Mensaje</label>
+                    <label id='label' htmlFor="Message">Mensaje</label>
                     <textarea id="Message" name="Message" placeholder="Dejános tu comentario!"
                         cols={30} rows={8} className='complete' />
                 </div>

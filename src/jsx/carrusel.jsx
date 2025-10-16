@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import '../css/Carrusel.css'
 //las fotos
-import { avion, banana, codri } from '../js/image.js'
+import { carruselViaje, mer, carruselCena } from '../js/image.js'
 
 //El carrusel
 export function Carrusel() {
@@ -32,9 +32,9 @@ export function Carrusel() {
         }, 500)
     }
 
-    const información = [{ src: avion, alt: "avión", texto: ["un avión", "avioncito"] },
-    { src: banana, alt: "banana", texto: ["una banana"] },
-    { src: codri, alt: "codri", texto: ["un cocodrilo", "en el agua"] }
+    const información = [{ src: carruselViaje, alt: "ilustración de un mapa", texto: ["VIAJA!"] },
+    { src: mer, alt: "logo de memoria en ruta", texto: ["BIENVENIDO"] },
+    { src: carruselCena, alt: "cena", texto: ["CENA!"] }
     ]
     return (
         <>

@@ -381,3 +381,12 @@ html {
         margin-right: 10px;
     }
 }
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Responsive Página de cena y viaje*/
+@media (max-width: 1170px) {
+    .cards-container {
+        gap: 85px;
+    }
+}

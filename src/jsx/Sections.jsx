@@ -1,41 +1,22 @@
 import '../css/Sections.css'
 import '../css/Footer.css'
-import { Link } from "react-router-dom";
+import { DinnerCards, TravelCards } from '../js/componentes'
 
 //Sección de cenas
 export function DinnerSection() {
     return (
-        <div>
-            <div id='d-t'>
-                <h1>¡Organizá tu viaje o cena de egresados con nosotros!</h1>
-                <p>Elegí entre los viajes y cenas más populares o echale un vistazo a
-                    las demás opciones.</p>
-            </div>
-            <div className='section'>
-                <section className="cenas">
-                    <h2>Cenas</h2>
-                    <p>Éstas son las cenas más buscadas:</p>
-
-                    <div className="destinos">
-                        <div className="destino">
-                            <img src="https://via.placeholder.com/250x150" alt="Cena 2" />
-                            <h3>Cena en Córdoba</h3>
-                        </div>
-                        <div className="destino">
-                            <img src="https://via.placeholder.com/250x150" alt="Cena 2" />
-                            <h3>Cena en Córdoba</h3>
-                        </div>
-                        <div className="destino">
-                            <img src="https://via.placeholder.com/250x150" alt="Cena 3" />
-                            <h3>Cena en Rosario</h3>
-                        </div>
-                    </div>
-                    <Link to="/dinner">
-                        <button id="organize">Organizar mi cena!</button>
-                    </Link>
-                </section>
-            </div>
-        </div >
+        <>
+            <div>
+                <div id='d-t'>
+                    <h1>¡Organizá tu viaje o cena de egresados con nosotros!</h1>
+                </div>
+                <div className='section'>
+                    <section className="cenas">
+                        <DinnerCards />
+                    </section>
+                </div>
+            </div >
+        </>
     )
 }
 
@@ -43,31 +24,14 @@ export function DinnerSection() {
 //Sección de viajes
 export function TravelSection() {
     return (
-        <div>
-            <div className='section'>
-                <section className="viajes">
-                    <h2>Viajes</h2>
-                    <p>Éstos son los destinos más buscados:</p>
-
-                    <div className="destinos">
-                        <div className="destino">
-                            <img src="https://via.placeholder.com/250x150" alt="Destino 1" />
-                            <h3>París</h3>
-                        </div>
-                        <div className="destino">
-                            <img src="https://via.placeholder.com/250x150" alt="Destino 2" />
-                            <h3>Roma</h3>
-                        </div>
-                        <div className="destino">
-                            <img src="https://via.placeholder.com/250x150" alt="Destino 3" />
-                            <h3>Tokio</h3>
-                        </div>
-                    </div>
-                    <Link to="/travel">
-                        <button id="organize">Organizar mi viaje!</button>
-                    </Link>
-                </section>
-            </div>
-        </div>
+        <>
+            <div>
+                <div className='section'>
+                    <section className="viajes">
+                        <TravelCards />
+                    </section>
+                </div>
+            </div >
+        </>
     )
 }

@@ -6,7 +6,7 @@ import {
 //Página de cenas
 export function DinnerCards() {
     return (
-        <div id="menu-cards">
+        <div>
             <div>
                 <h1>¡ELEGÍ LA OPCIÓN QUE MÁS TE GUSTE Y COMENZÁ A ORGANIZAR TU CENA!</h1>
 
@@ -66,7 +66,7 @@ export function DinnerCards() {
 //Página de viajes 
 export function TravelCards() {
     return (
-        <div id="menu-cards">
+        <div>
             <div>
                 <h1>¡ELEGÍ EL SET QUE MÁS TE GUSTE Y COMENZÁ A ORGANIZAR TU VIAJE!</h1>
             </div>

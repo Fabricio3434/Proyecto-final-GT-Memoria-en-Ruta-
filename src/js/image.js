@@ -1,17 +1,17 @@
 import cenas from '../private/cenas.jpg';
 import viajes from '../private/viajes.jpg';
 import empresa from '../private/empresa.jpg';
-import avion from '../private/avion.jpg'
-import banana from '../private/banana.jpg'
-import codri from '../private/codri.jpg'
-import cenaBronce from '../private/Cena-Bronce.png'
-import cenaPlata from '../private/Cena-Plata.png'
-import cenaOro from '../private/Cena-Oro.png'
-import viajeAmérica from '../private/Viaje América.png'
-import viajeEuropa from '../private/Viaje Europa.png'
-import viajeOceanía from '../private/viaje Oceanía.png'
+import mer from '../private/MemoriaEnRuta.webp'
+import carruselCena from '../private/CarruselCena.webp'
+import carruselViaje from '../private/carruselViaje.webp'
+import cenaBronce from '../private/CenaBronce.webp'
+import cenaPlata from '../private/CenaPlata.webp'
+import cenaOro from '../private/CenaOro.webp'
+import viajeAmérica from '../private/Viaje América.webp'
+import viajeEuropa from '../private/Viaje Europa.webp'
+import viajeOceanía from '../private/Viaje Oceanía.webp'
 
 export {
-    cenas, viajes, empresa, avion, banana, codri, cenaBronce, cenaPlata, cenaOro,
+    cenas, viajes, empresa, mer, carruselCena, carruselViaje, cenaBronce, cenaPlata, cenaOro,
     viajeAmérica, viajeEuropa, viajeOceanía
 };
