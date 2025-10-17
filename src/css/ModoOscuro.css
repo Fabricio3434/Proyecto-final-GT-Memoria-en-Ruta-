@@ -22,14 +22,19 @@ body.dark {
 
 /* Links y botones */
 body.dark a {
-    color: #9ec9fd;
+    color: #ffffff;
 }
 
 body.dark button {
-    color: #f5f5f5;
+    color: #000000;
 }
 
 /* Modo oscuro */
+
+body.dark * {
+    color: #e3c16f;
+}
+
 body.dark .cenas,
 body.dark .viajes,
 body.dark .Navbar,
@@ -43,6 +48,11 @@ body.dark #welcome-message {
 
 body.dark .complete {
     background-color: #1b1b1b;
+}
+
+body.dark .complete:focus {
+    background-color: #353433;
+    color: #e3c16f;
 }
 
 body.dark .navbar-link:hover {
@@ -60,6 +70,10 @@ body.dark .goldCard {
 }
 
 /* Modo Claro */
+body.light * {
+    color: #E3C16F;
+}
+
 body.light .cenas,
 body.light .viajes,
 body.light .Navbar,
@@ -68,7 +82,7 @@ body.light #form,
 body.light #redes,
 body.light #welcome-message {
     background-color: #1B2A41;
-    color: #ffffff;
+    color: #e3c16f;
 }
 
 body.light .navbar-link:hover {
@@ -86,6 +100,13 @@ body.light .goldCard {
 
 body.light .complete {
     background-color: #1B2A41;
+}
+
+body.light .complete:focus {
+    color: #1B2A41;
+    background-color: #e3c16f;
+    box-shadow: 13px 13px 100px #E3C16F,
+        -13px -13px 100px #1B2A41;
 }
 
 
