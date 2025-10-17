@@ -1,0 +1,9 @@
+.footer {
+    background: #1B2A41;
+    text-align: start;
+    padding: 20px;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}

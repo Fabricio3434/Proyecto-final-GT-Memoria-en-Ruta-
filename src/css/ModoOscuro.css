@@ -1,0 +1,111 @@
+/* Estilos globales */
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Modo claro (por defecto) */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Modo oscuro */
+body.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Links y botones */
+body.dark a {
+    color: #9ec9fd;
+}
+
+body.dark button {
+    color: #f5f5f5;
+}
+
+/* Modo oscuro */
+body.dark .cenas,
+body.dark .viajes,
+body.dark .Navbar,
+body.dark .footer,
+body.dark #form,
+body.dark #redes,
+body.dark #welcome-message {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+body.dark .complete {
+    background-color: #1b1b1b;
+}
+
+body.dark .navbar-link:hover {
+    background-color: #1b1b1b;
+}
+
+body.dark .americaTrip,
+body.dark .europeTrip,
+body.dark .oceaniaTrip,
+body.dark .bronzeCard,
+body.dark .silverCard,
+body.dark .goldCard {
+    background-color: #1b1b1b;
+    box-shadow: 1px 1px 12px #050505;
+}
+
+/* Modo Claro */
+body.light .cenas,
+body.light .viajes,
+body.light .Navbar,
+body.light .footer,
+body.light #form,
+body.light #redes,
+body.light #welcome-message {
+    background-color: #1B2A41;
+    color: #ffffff;
+}
+
+body.light .navbar-link:hover {
+    background-color: #1B2A41;
+}
+
+body.light .americaTrip,
+body.light .europeTrip,
+body.light .oceaniaTrip,
+body.light .bronzeCard,
+body.light .silverCard,
+body.light .goldCard {
+    background-color: #1B2A41;
+}
+
+body.light .complete {
+    background-color: #1B2A41;
+}
+
+
+/* Botón modo oscuro */
+.theme-toggle-container {
+    position: fixed;
+    transform: translateY(60px);
+    top: 1rem;
+    right: 1rem;
+    z-index: 50;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(90deg) scale(1.4);
+}
