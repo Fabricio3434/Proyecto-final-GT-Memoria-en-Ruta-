@@ -1,7 +1,7 @@
 import '../css/Navbar.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Info, Person, Flatware, Luggage } from '@mui/icons-material';
+import { Home, Info, Person } from '@mui/icons-material';
 import {
     AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer
 } from '../js/componentes'
