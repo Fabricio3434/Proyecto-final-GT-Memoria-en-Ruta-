@@ -1,3 +1,4 @@
+import logo from '@/private/Navbar-logo.png'
 import cenas from '@/private/cenas.jpg';
 import viajes from '@/private/viajes.jpg';
 import empresa from '@/private/empresa.jpg';
@@ -12,6 +13,6 @@ import viajeEuropa from '@/private/Viaje Europa.webp'
 import viajeOceanía from '@/private/Viaje Oceanía.webp'
 
 export {
-    cenas, viajes, empresa, mer, carruselCena, carruselViaje, cenaBronce, cenaPlata, cenaOro,
+    logo, cenas, viajes, empresa, mer, carruselCena, carruselViaje, cenaBronce, cenaPlata, cenaOro,
     viajeAmérica, viajeEuropa, viajeOceanía
 };

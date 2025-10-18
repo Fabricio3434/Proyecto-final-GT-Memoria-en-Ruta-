@@ -1,5 +1,5 @@
-import '../css/Acerca.css'
-import { cenas, viajes, empresa } from '../js/image.js'
+import '@/css/Acerca.css'
+import { cenas, viajes, empresa } from '@/js/image.js'
 import { Avatar, Stack } from '@mui/material'
 import { useState } from "react";
 

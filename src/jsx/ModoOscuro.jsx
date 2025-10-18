@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../css/ModoOscuro.css";
+import "@/css/ModoOscuro.css";
 
 export function ModoOscuro() {
     const [dark, setDark] = useState(false);

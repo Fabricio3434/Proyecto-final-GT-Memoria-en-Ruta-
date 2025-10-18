@@ -1,7 +1,7 @@
 import { useRef } from 'react'
-import '../css/Carrusel.css'
+import '@/css/Carrusel.css'
 //las fotos
-import { carruselViaje, mer, carruselCena } from '../js/image.js'
+import { carruselViaje, mer, carruselCena } from '@/js/image.js'
 
 //El carrusel
 export function Carrusel() {

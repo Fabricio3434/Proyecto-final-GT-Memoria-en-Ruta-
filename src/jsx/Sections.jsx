@@ -1,6 +1,6 @@
-import '../css/Sections.css'
-import '../css/Footer.css'
-import { DinnerCards, TravelCards } from '../js/componentes'
+import '@/css/Sections.css'
+import '@/css/Footer.css'
+import { DinnerCards, TravelCards } from '@/js/componentes'
 
 //Sección de cenas
 export function DinnerSection() {

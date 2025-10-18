@@ -1,10 +1,11 @@
-import '../css/Navbar.css';
+import '@/css/Navbar.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Info, Person } from '@mui/icons-material';
 import {
     AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer
 } from '../js/componentes'
+import { logo } from '@/js/image.js'
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export function Navbar() {
         <>
             <nav className="Navbar">
                 <div className="minibar-box">
-                    <img src="./img/Navbar-logo.png" className="navbar-logo" alt="" />
+                    <img src={logo} className="navbar-logo" alt="" />
                 </div>
                 <h1 className="Título">MEMORIA EN RUTA</h1>{/* Título de la nabvar para pantallas normales */}
                 <h1 className="título-cel">MER</h1>{/* Título de la nabvar para pantallas pequeñas */}

@@ -1,9 +1,9 @@
-import '../css/Cena&Viaje.css'
+import '@/css/Cena&Viaje.css'
 import {
     cenaBronce, cenaOro, cenaPlata, viajeAmérica, viajeEuropa, viajeOceanía
-} from '../js/image'
+} from '@/js/image'
 import { Link } from "react-router-dom";
-import { Organizar, Organizar2 } from '../js/componentes'
+import { Organizar, Organizar2 } from '@/js/componentes'
 
 //Página de cenas
 export function DinnerCards() {

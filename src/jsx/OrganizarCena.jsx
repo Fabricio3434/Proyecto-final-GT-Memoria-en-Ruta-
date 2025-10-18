@@ -1,5 +1,5 @@
 import { useLocalStorage } from './useLocalStorage'
-import '../css/Formularios.css'
+import '@/css/Formularios.css'
 
 export function Organizar() {
   const provincias = ["Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba", "Corrientes", "Entre Ríos", "Formosa",
