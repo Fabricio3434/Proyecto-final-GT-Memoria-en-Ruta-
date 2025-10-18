@@ -8,12 +8,6 @@ html {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* Modo claro (por defecto) */
-body.light {
-    background-color: #F5FBEF;
-    color: #000000;
-}
-
 /* Modo oscuro */
 body.dark {
     background-color: #000000;
@@ -48,11 +42,13 @@ body.dark .cenas,
 body.dark .viajes,
 body.dark .Navbar,
 body.dark .footer,
+body.dark .Formulario,
+body.dark .atras,
+body.dark .girar:hover,
 body.dark #form,
 body.dark #redes,
 body.dark #welcome-message {
     background-color: #111111;
-    color: #ffffff;
 }
 
 body.dark .complete {
@@ -79,11 +75,14 @@ body.dark #s {
     box-shadow: 1px 1px 12px #050505;
 }
 
-/* Modo Claro */
+/* Modo claro (por defecto) */
+body.light,
 body.light .section,
 body.light #seccion2,
 body.light #root {
-    background-color: #F5FBEF;
+    /*   background-color: #F5FBEF;
+    background-color: #131f31; */
+    background-color: #223655;
 }
 
 body.light .cenas,

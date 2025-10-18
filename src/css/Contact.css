@@ -134,7 +134,8 @@
   cursor: pointer;
 }
 
-#sent:hover {
+#sent:hover,
+#close:hover {
   transition: 250ms ease-out;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 8px;

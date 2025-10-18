@@ -134,11 +134,12 @@ html {
     #container {
         display: grid;
         height: 60vh;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
         grid-template-areas:
-            "form form redes redes"
-            "form form welcome welcome";
+            "form form redes"
+            "form form redes"
+            "welcome welcome welcome";
     }
 
     #form {
@@ -154,7 +155,8 @@ html {
     }
 
     #welcome-message {
-        font-size: 10px;
+        font-size: 1.6rem;
+        height: 200px;
     }
 }
 
@@ -202,11 +204,12 @@ html {
     #container {
         display: grid;
         height: 50vh;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
-            "form redes"
-            "form welcome";
+            "form"
+            "redes"
+            "welcome";
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -386,5 +389,44 @@ html {
 @media (max-width: 1170px) {
     .cards-container {
         gap: 85px;
+    }
+}
+
+@media (max-width: 485px) {
+    .tripSet::before {
+        max-width: 100%;
+    }
+
+    .textContainer>p {
+        font-size: 17px;
+    }
+
+    .americaTrip img,
+    .europeTrip img,
+    .oceaniaTrip img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        transform: translate(20px, -10px);
+    }
+}
+
+@media (max-width: 460px) {
+    .textContainer>p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .textContainer>p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 380px) {
+    .textContainer>p {
+        font-size: 11px;
     }
 }

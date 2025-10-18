@@ -4,7 +4,7 @@ import { Contact } from '../jsx/Contacto.jsx'
 import { DinnerSection, TravelSection } from '../jsx/Sections.jsx'
 import { Footer } from '../jsx/Footer.jsx'
 import { DinnerCards, TravelCards } from '../jsx/Cena&Viaje.jsx'
-import { Organizar } from '../jsx/OrganizarCena&Viaje.jsx'
+import { Organizar } from '../jsx/OrganizarCena.jsx'
 import { Organizar2 } from '../jsx/Organizarviaje.jsx'
 import { ModoOscuro } from '../jsx/ModoOscuro.jsx'
 
