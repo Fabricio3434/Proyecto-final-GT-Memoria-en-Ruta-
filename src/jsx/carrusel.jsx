@@ -32,9 +32,10 @@ export function Carrusel() {
         }, 500)
     }
 
-    const información = [{ src: carruselViaje, alt: "ilustración de un mapa", texto: ["VIAJA!"] },
-    { src: mer, alt: "logo de memoria en ruta", texto: ["BIENVENIDO"] },
-    { src: carruselCena, alt: "cena", texto: ["CENA!"] }
+    const información = [
+        { src: carruselViaje, alt: "ilustración de un mapa", texto: [""] },
+        { src: mer, alt: "logo de memoria en ruta", texto: [""] },
+        { src: carruselCena, alt: "cena", texto: [""] }
     ]
     return (
         <>
