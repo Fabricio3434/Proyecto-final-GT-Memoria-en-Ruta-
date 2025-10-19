@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import "@/css/ModoOscuro.css";
+import SunnyIcon from '@mui/icons-material/Sunny';
+import Brightness3Icon from '@mui/icons-material/Brightness3'; import "@/css/ModoOscuro.css";
 
 export function ModoOscuro() {
     const [dark, setDark] = useState(false);
@@ -21,7 +22,9 @@ export function ModoOscuro() {
                 onClick={() => setDark(!dark)}
                 aria-label="Cambiar modo"
             >
-                <span className="icon">{dark ? "🌙" : "☀️"}</span>
+                <span className="icon iconoMO">
+                    {dark ? <SunnyIcon />
+                        : <Brightness3Icon />}</span>
             </button>
         </div>
     );

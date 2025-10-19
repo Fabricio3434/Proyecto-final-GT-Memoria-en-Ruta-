@@ -1,17 +1,7 @@
-/*    Colores:
-Azul: #1B2A41
-Blanco. #F5FBEF
-Dorado: #e3c16f
-Celeste: #0d324d
-*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: #F5FBEF
 }
 
 .photos {
@@ -22,8 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     aspect-ratio: 1/1;
-    border: solid #e3c16f 5px;
-    border-radius: 20px;
+    border: solid #e3c16f 7px;
     height: auto;
     width: 100%;
     backface-visibility: hidden;
@@ -57,7 +46,6 @@ div.photos>img {
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
     transform-origin: center;
 }
 
@@ -65,8 +53,6 @@ div.photos>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    z-index: -1;
 }
 
 .carta.voltear {
@@ -140,10 +126,11 @@ div.photos>img {
 }
 
 #seccion2 {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
 
 }
 
@@ -177,4 +164,37 @@ div.photos>img {
 
 #N>li::marker {
     color: purple;
+}
+
+@media(max-width: 600px) {
+    .acomodar {
+        grid-template-columns: 1fr;
+    }
+
+    .envase {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .photos {
+        aspect-ratio: auto;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    #seccion2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #seccion2 ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    #h2 {
+        width: 90%;
+    }
 }

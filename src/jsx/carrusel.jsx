@@ -1,7 +1,8 @@
 import { useRef } from 'react'
 import '@/css/Carrusel.css'
-//las fotos
 import { carruselViaje, mer, carruselCena } from '@/js/image.js'
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 //El carrusel
 export function Carrusel() {
@@ -62,14 +63,16 @@ export function Carrusel() {
 //Botón izquierdo
 export function Botoni({ onClick }) {
     return (
-        <button onClick={onClick} className="botones" id="izq"> 🡸 </button>
+        <button onClick={onClick} className="botones" id="izq">
+            <ArrowCircleLeftIcon /> </button>
     )
 }
 
 //Botón derecho
 export function Botond({ onClick }) {
     return (
-        <button onClick={onClick} className="botones" id="der"> 🡺 </button>
+        <button onClick={onClick} className="botones" id="der">
+            <ArrowCircleRightIcon /> </button>
     )
 }
 

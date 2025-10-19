@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Info, Person } from '@mui/icons-material';
 import {
-    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer
+    AcercaDeNosotros, Carrusel, Contact, DinnerSection, TravelSection, Footer, ModoOscuro
 } from '../js/componentes'
 import { logo } from '@/js/image.js'
 
@@ -21,19 +21,15 @@ export function Navbar() {
                     <Link className="navbar-link" to="/home">
                         <Home sx={{ color: "#E3C16F" }} />
                     </Link>
-                    {/*  <Link className="navbar-link" to="/dinner">
-                        <Flatware sx={{ color: "#E3C16F" }} />
-                    </Link>
-                       <Link className="navbar-link" to="/travel">
-                        <Luggage sx={{ color: "#E3C16F" }} />
-                    </Link>
-                    */}
                     <Link className="navbar-link" to="/contact">
                         <Person sx={{ color: "#E3C16F" }} />
                     </Link>
                     <Link className="navbar-link" to="/about">
                         <Info sx={{ color: "#E3C16F" }} />
                     </Link>
+                    <div className="modo-oscuro-container">
+                        <ModoOscuro />
+                    </div>
                 </div>
 
                 {/*Botón desplegable para pantallas pequeñas*/}
@@ -49,14 +45,6 @@ export function Navbar() {
                         Inicio
                         <Home sx={{ color: "inherit" }} />
                     </Link>
-                    {/* <Link to="/dinner" onClick={() => setIsOpen(false)}>
-                        Cenas
-                        <Flatware sx={{ color: "#E3C16F" }} />
-                    </Link>
-                    <Link to="/travel" onClick={() => setIsOpen(false)}>
-                        Viajes
-                        <Luggage sx={{ color: "#E3C16F" }} />
-                    </Link> */}
                     <Link to="/contact" onClick={() => setIsOpen(false)}>
                         Contacto
                         <Person sx={{ color: "#E3C16F" }} />
@@ -65,6 +53,9 @@ export function Navbar() {
                         Acerca De
                         <Info sx={{ color: "#E3C16F" }} />
                     </Link>
+                    <div className='modo-oscuro-desplegable'>
+                        <ModoOscuro />
+                    </div>
                 </div>
             </div>
         </>
@@ -83,20 +74,6 @@ export function Inicio() {
         </>
     )
 }
-
-{/* //Cena
-export function Cena() {
-    return (
-        <DinnerCards />
-    )
-}
-
-//Viaje
-export function Viaje() {
-    return (
-        <TravelCards />
-    )
-} */}
 
 //Contacto
 
