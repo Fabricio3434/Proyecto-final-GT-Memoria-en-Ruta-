@@ -125,14 +125,19 @@ body.light .complete:focus {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.theme-toggle:hover {
+.icon svg:hover {
     transform: rotate(50deg) scale(1.2);
 }
 
 /*Iconos*/
-.iconoMO svg {
+.iconoMO svg,
+.iconoMOH svg {
     width: 26px;
     height: 26px;
+}
+
+.iconoMOH {
+    display: none;
 }
 
 body.dark .iconoMO svg path {

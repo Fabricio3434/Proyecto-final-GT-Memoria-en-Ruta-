@@ -91,9 +91,11 @@ export function AcercaDeNosotros() {
                     >F</Avatar>
                     <ul id='F'>
                         <li>Fabri</li>
-                        <li> Referente</li>
+                        <li>Referente</li>
                         <li>Navbar</li>
                         <li>Pág.Contactos</li>
+                        <li>Páginas de cena y viaje</li>
+                        <li>Mejora css del modo oscuro</li>
                     </ul>
 
                     <Avatar
@@ -103,6 +105,7 @@ export function AcercaDeNosotros() {
                         <li>Luci</li>
                         <li>Carrusel de img</li>
                         <li>Pág. Acerca De</li>
+                        <li>Formularios de organización</li>
                     </ul>
                     <Avatar
                         sx={{ width: 80, height: 80, fontSize: 40, backgroundColor: 'purple' }}
@@ -111,21 +114,8 @@ export function AcercaDeNosotros() {
                         <li>Nanu</li>
                         <li>Secciones de cenas y viajes</li>
                         <li>Footer</li>
+                        <li>Funcionalidad del modo oscuro</li>
                     </ul>
-                    {/*   <Avatar
-                        sx={{ width: 80, height: 80, fontSize: 40, backgroundColor: 'pink' }}
-                    >T</Avatar>
-                    <ul id='T'>
-                        <li>Tizi</li>
-                        <li>...</li>
-                    </ul>
-                    <Avatar
-                        sx={{ width: 80, height: 80, fontSize: 40, backgroundColor: 'green' }}
-                    >E</Avatar>
-                    <ul id='E'>
-                        <li>Ezequiel</li>
-                        <li>...</li>
-                    </ul> */}
                 </Stack>
             </section>
         </>

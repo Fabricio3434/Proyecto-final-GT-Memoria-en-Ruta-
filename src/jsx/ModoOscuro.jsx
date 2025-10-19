@@ -25,6 +25,10 @@ export function ModoOscuro() {
                 <span className="icon iconoMO">
                     {dark ? <SunnyIcon />
                         : <Brightness3Icon />}</span>
+                <span className="icon iconoMOH">
+                    <span>Tema {dark ? '' : ''}</span>
+                    {dark ? <SunnyIcon /> : <Brightness3Icon />}
+                </span>
             </button>
         </div>
     );
