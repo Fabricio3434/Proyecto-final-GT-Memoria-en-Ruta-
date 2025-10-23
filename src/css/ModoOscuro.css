@@ -41,11 +41,16 @@ body.dark #welcome-message {
     background-color: #111111;
 }
 
-body.dark .complete {
+body.dark .complete,
+body.dark .color>input,
+body.dark #t {
     background-color: #1b1b1b;
 }
 
-body.dark .complete:focus {
+body.dark .complete:focus,
+body.dark .color>input:focus,
+body.dark #t:focus {
+
     background-color: #353433;
     color: #e3c16f;
 }
@@ -103,7 +108,9 @@ body.light .complete {
     background-color: #1B2A41;
 }
 
-body.light .complete:focus {
+body.light .complete:focus,
+body.light .color>input:focus,
+body.light #t:focus {
     color: #1B2A41;
     background-color: #e3c16f;
     box-shadow: 13px 13px 100px #E3C16F,

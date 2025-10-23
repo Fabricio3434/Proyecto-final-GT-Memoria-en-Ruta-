@@ -5,12 +5,9 @@
 }
 
 .Formulario {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    border: 6px solid #e3c16f;
     width: 40%;
     font-size: 20px;
     gap: 10px;
@@ -19,7 +16,10 @@
     max-width: 600px;
     width: 100%;
     box-sizing: border-box;
+}
 
+.color>input {
+    margin-bottom: 20px;
 }
 
 legend {
@@ -29,19 +29,17 @@ legend {
 }
 
 .field {
-    border: 5px ridge #e3c16f;
-    padding: 7px;
+    border: 3px solid #e3c16f;
+    padding: 10px;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
 }
 
 .la {
     font-weight: normal;
-}
-
-.color>input {
-    background-color: #e3c16f;
-    color: #1b2a41;
-    width: 70%;
 }
 
 select {
@@ -66,29 +64,10 @@ select>option {
 }
 
 .indicar>p {
-    background-color: #e3c16f;
-    color: #1b2a41;
     height: 25px;
     text-align: center;
     margin-top: 8px;
     border-radius: 20px;
-}
-
-.envio {
-    background-color: #e3c16f;
-    color: #1b2a41;
-    width: 10em;
-    height: 1.5em;
-    border-radius: 5px;
-}
-
-.envio:hover {
-    scale: 1.2;
-}
-
-#t {
-    width: 80%;
-    margin: 7px;
 }
 
 .alinear2 {
@@ -99,43 +78,4 @@ select>option {
 
 .ul>li {
     margin: 5px;
-}
-
-@media(max-width: 600px) {
-    .Formulario {
-        width: 90%;
-        font-size: 16px;
-        border-width: 4px;
-    }
-
-    .field {
-        width: 100%;
-        padding: 5px;
-        border-width: 3px;
-    }
-
-    .color,
-    input,
-    select,
-    #t {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .envio {
-        width: 100%;
-        height: 2.2em;
-        font-size: 18px;
-    }
-
-    .indicar>p {
-        height: auto;
-        padding: 8px;
-        font-size: 16px;
-    }
-
-    .ul {
-        font-size: 16px;
-        padding: 0 10px;
-    }
 }

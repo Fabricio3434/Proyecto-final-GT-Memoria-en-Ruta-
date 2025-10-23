@@ -7,10 +7,10 @@ export function Organizar() {
     "Santa Cruz", "Santa Fé", "Santiago del Estero", "Tierra del Fuego", "Tucumán"
   ]
   const [info, setInfo] = useLocalStorage('info', {
-    nombre: " ",
-    email: " ",
-    cena: " ",
-    provincia: " ",
+    nombre: "",
+    email: "",
+    cena: "",
+    provincia: "",
     indicaciones: ""
   })
   const guardar = (e) => {
@@ -21,8 +21,8 @@ export function Organizar() {
     <>
       <section className='indicar'>
         <h2>¡Completa el formulario para iniciar con Memoria en Ruta!</h2>
-        <p>Completa el formulario con tus preferencias y contacto, a lo largo de los
-          próximos cinco días hábiles, la empresa se pondrá en contacto para poder empezar a organizar la cena de tus sueños.
+        <p>En los próximos cinco días hábiles te estaremos contactando para
+          definir juntos los detalles de la cena de tus sueños.
         </p>
       </section>
       <section className="alinear">
@@ -31,8 +31,8 @@ export function Organizar() {
             <legend>Datos de contacto</legend>
             <div className='color'>
               <input type="text"
-                placeholder='Introducir nombre'
-                name='nombre'
+                placeholder="Introducir nombre"
+                name="nombre"
                 value={info.nombre}
                 onChange={guardar}
               />
@@ -80,7 +80,7 @@ export function Organizar() {
             <label htmlFor="indicaciones" className="la">¿Algunas especificaciones que debamos saber?</label>
             <div className='alinear2'>
               <textarea id='t' name="indicaciones" placeholder='Alergías, Condiciones Médicas. Caso contrario indicar simplemente "no"'
-                maxLength={50}
+                maxLength={50} cols={10} rows={3}
                 value={info.indicaciones} onChange={guardar}></textarea>
             </div>
           </fieldset>
@@ -94,7 +94,7 @@ export function Organizar() {
           </ul>
 
           <div >
-            <input className="envio"
+            <input id='sent'
               type="submit"
               value="enviar"
             />

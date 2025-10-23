@@ -24,7 +24,8 @@
   grid-area: welcome;
 }
 
-#form {
+#form,
+.Formulario {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -86,7 +87,9 @@
   font-weight: bold;
 }
 
-.complete {
+.complete,
+.color>input,
+#t {
   padding: 0.5rem;
   background-color: #1B2A41;
   border: none;
@@ -103,7 +106,8 @@
   transition: 300ms ease-in-out;
 }
 
-.complete:focus {
+.complete:focus,
+.color>input:focus {
   transform: scale(1.05);
 }
 

@@ -20,8 +20,8 @@ export function Organizar2() {
     <>
       <section className='indicar'>
         <h2>¡Completa el formulario para iniciar con Memoria en Ruta!</h2>
-        <p>Completa el formulario con tus preferencias y contacto, a lo largo de los
-          próximos cinco días hábiles, la empresa se pondrá en contacto para poder empezar a organizar el viaje de tus sueños.
+        <p>En los próximos cinco días hábiles te estaremos contactando para
+          definir juntos los detalles del viaje de tus sueños.
         </p>
       </section>
       <section className="alinear">
@@ -30,6 +30,7 @@ export function Organizar2() {
             <legend>Datos de contacto</legend>
             <div className="color">
               <input type="text"
+                placeholder="Introducir nombre"
                 name="nombre"
                 value={info.nombre}
                 onChange={guardar}
@@ -41,23 +42,26 @@ export function Organizar2() {
                 name="email"
                 value={info.email}
                 onChange={guardar}
-                placeholder="Introducri email"
+                placeholder="Introducir email"
               />
             </div>
           </fieldset>
-          <legend>Sobre tu viaje</legend>
           {/* */}
           <fieldset className="field">
-            <label htmlFor="viaje" className="la"> Elige tu viaje</label>
-            <select name="viaje"
-              id="V"
-              value={info.viaje}
-              onChange={guardar}
-            >
-              <option value="Set-América del Sur">Set-América del Sur</option>
-              <option value="Set-Europa">Set-Europa</option>
-              <option value="Set-Australia">Set-Australia</option>
-            </select>
+            <legend>Sobre tu viaje</legend>
+            <div>
+              <label htmlFor="viaje" className="la">Elige tu viaje</label>
+              <select
+                name="viaje"
+                id="V"
+                value={info.viaje}
+                onChange={guardar}
+              >
+                <option value="Set-América del Sur">Set-América del Sur</option>
+                <option value="Set-Europa">Set-Europa</option>
+                <option value="Set-Oceanía">Set-Oceanía</option>
+              </select>
+            </div>
             {/* */}
             <div>
               <label htmlFor="provincias" className="la">Selecciona tu provincia</label>
@@ -80,10 +84,10 @@ export function Organizar2() {
             <li>{info.provincia}</li>
           </ul>
           <div>
-            <input type="submit" value="enviar" className="envio" />
+            <input type="submit" value="enviar" id="sent" />
           </div>
         </form>
-      </section>
+      </section >
     </>
   )
 }

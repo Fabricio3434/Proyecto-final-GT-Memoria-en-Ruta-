@@ -478,3 +478,40 @@ html {
         font-size: 11px;
     }
 }
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*Responsive formularios de envio*/
+@media(max-width: 600px) {
+    .Formulario {
+        width: 90%;
+        font-size: 16px;
+        border-width: 4px;
+    }
+
+    .field {
+        width: 90%;
+        padding: 5px;
+        border-width: 3px;
+    }
+
+    .color,
+    input,
+    select,
+    #t {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .indicar>p {
+        height: auto;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .ul {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
