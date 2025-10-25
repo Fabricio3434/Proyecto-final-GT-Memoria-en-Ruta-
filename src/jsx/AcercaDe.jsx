@@ -87,7 +87,7 @@ export function AcercaDeNosotros() {
                     justifyContent="center"
                 >
                     <Avatar
-                        sx={{ width: 80, height: 80, margin: 50, fontSize: 40, backgroundColor: 'orange' }}
+                        sx={{ width: 80, height: 80, margin: 50, fontSize: 40, backgroundColor: '#e3c16f', color: '#1B2A41', fontFamily: 'Cinzel'}}
                     >F</Avatar>
                     <ul id='F'>
                         <li>Fabri</li>
@@ -99,7 +99,7 @@ export function AcercaDeNosotros() {
                     </ul>
 
                     <Avatar
-                        sx={{ width: 80, height: 80, fontSize: 40, backgroundColor: 'blue' }}
+                        sx={{ width: 80, height: 80, fontSize: 40, backgroundColor: '#e3c16f', color: '#1B2A41', fontFamily: 'Cinzel' }}
                     >L</Avatar>
                     <ul id='L'>
                         <li>Luci</li>
@@ -108,7 +108,7 @@ export function AcercaDeNosotros() {
                         <li>Formularios de organización</li>
                     </ul>
                     <Avatar
-                        sx={{ width: 80, height: 80, fontSize: 40, backgroundColor: 'purple' }}
+                        sx={{ width: 80, height: 80, fontSize: 40, backgroundColor: '#e3c16f', color: '#1B2A41', fontFamily: 'Cinzel' }}
                     >N</Avatar>
                     <ul id='N'>
                         <li>Nanu</li>

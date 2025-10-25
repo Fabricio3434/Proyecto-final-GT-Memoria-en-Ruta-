@@ -34,6 +34,7 @@
     transform: translateY(-60px);
     border-radius: 20px;
     font-weight: bolder;
+    font-family: 'Cinzel';
 }
 
 .silverCard::before {
@@ -49,6 +50,7 @@
     transform: translateY(-60px);
     border-radius: 20px;
     font-weight: bolder;
+    font-family: 'Cinzel';
 }
 
 .goldCard::before {
@@ -64,6 +66,7 @@
     transform: translateY(-60px);
     border-radius: 20px;
     font-weight: bolder;
+    font-family: 'Cinzel';
 }
 
 .bronzeCard img,
@@ -89,7 +92,7 @@
     border-top-left-radius: 8px;
     color: #1B2A41;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     text-align: center;
 }
 
@@ -172,14 +175,17 @@
 
 .americaTrip::before {
     content: "SET AMÉRICA DEL SUR";
+    font-family: 'Cinzel';
 }
 
 .europeTrip::before {
     content: "SET EUROPA";
+    font-family: 'Cinzel';
 }
 
 .oceaniaTrip::before {
     content: "SET OCEANÍA";
+    font-family: 'Cinzel';
 }
 
 /*Animación de cada carta*/

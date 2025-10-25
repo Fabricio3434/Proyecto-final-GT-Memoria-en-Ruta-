@@ -14,6 +14,13 @@ html {
     font-family: Arial, sans-serif;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
+/* Tipografía*/
+h1, h2, h3, legend, button {
+    font-family: 'Cinzel';
+}
+p, option, li, label, option {
+    font-family: 'Federo';
+}
 
 /* Configuración responsive para la página de contacto */
 @media (max-width: 1366px) {
