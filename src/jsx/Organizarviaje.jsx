@@ -78,10 +78,10 @@ export function Organizar2() {
           </fieldset>
           <ul className="ul">
             <h5>Verifica que la información sea correcta</h5>
-            <li>{info.nombre}</li>
-            <li>{info.email}</li>
-            <li>{info.viaje}</li>
-            <li>{info.provincia}</li>
+            <li> Nombre: {info.nombre}</li>
+            <li> Email: {info.email}</li>
+            <li> Viaje: {info.viaje}</li>
+            <li> Provincia: {info.provincia}</li>
           </ul>
           <div>
             <input type="submit" value="enviar" id="sent" />
