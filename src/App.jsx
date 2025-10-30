@@ -1,12 +1,14 @@
 import { Navbar, Inicio, AcercaDe, Contacto } from './jsx/Navbar.jsx'
 import { OrganizarC, OrganizarV } from './jsx/Cena&Viaje.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ScrollToTop } from './jsx/ScrollToTop.jsx'
 import './App.css'
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Inicio />} />

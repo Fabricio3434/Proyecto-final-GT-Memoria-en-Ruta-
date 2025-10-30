@@ -1,16 +1,49 @@
 import { useLocalStorage } from "./useLocalStorage"
+import { useState } from "react";
+import emailjs from "emailjs-com";
 import '@/css/Formularios.css'
 
 export function Organizar2() {
+
+  const [mensajeEnviado, setMensajeEnviado] = useState(false);
+  const [enviando, setEnviando] = useState(false);
+  const [error, setError] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setEnviando(true);
+
+    emailjs.sendForm(
+      "service_78xey8u",
+      "template_g4dutlc",
+      e.target,
+      "zAKBS-JL0agE_sUp4"
+    ).then(() => {
+      setError(false)
+      setEnviando(false);
+      setMensajeEnviado(true);
+      e.target.reset();
+      setInfo({
+        nombreyapellido: "",
+        email: "",
+        viaje: "",
+        provincia: ""
+      });
+    }).catch((error) => {
+      setError(true)
+      setEnviando(false)
+    });
+  };
+
   const provincias = ["Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba", "Corrientes", "Entre Ríos", "Formosa",
     "Jujuy", "La Pampa", "La Rioja", "Mendoza", "Misiones", "Neuquen", "Río Negro", "Salta", "San Juan", "San Luis",
     "Santa Cruz", "Santa Fé", "Santiago del Estero", "Tierra del Fuego", "Tucumán"
   ]
   const [info, setInfo] = useLocalStorage('infoviajes', {
-    nombre: " ",
-    email: " ",
-    viaje: " ",
-    provincia: " "
+    nombreyapellido: "",
+    email: "",
+    viaje: "",
+    provincia: ""
   })
   const guardar = (e) => {
     const { name, value } = e.target
@@ -18,6 +51,36 @@ export function Organizar2() {
   }
   return (
     <>
+
+      {mensajeEnviado && (
+        <div className='sent'>
+          <div id='s'>
+            <h1>¡Tu mensaje fue enviado!</h1>
+            <p>Nos pondremos en contacto contigo pronto.</p>
+            <button onClick={() => setMensajeEnviado(false)} id='close'>Cerrar</button>
+          </div>
+        </div>
+      )}
+
+      {enviando && (
+        <div className="sent">
+          <div id="s">
+            <h1>Enviando...</h1>
+            <p>Por favor espera un momento.</p>
+          </div>
+        </div>
+      )}
+
+      {error && (
+        <div className='sent'>
+          <div id='s'>
+            <h1>Se ha producido un error al enviar</h1>
+            <p>Por favor verifique que todo este en orden.</p>
+            <button onClick={() => setError(false)} id='close'>Cerrar</button>
+          </div>
+        </div>
+      )}
+
       <section className='indicar'>
         <h2>¡Completa el formulario para iniciar con Memoria en Ruta!</h2>
         <p>En los próximos cinco días hábiles te estaremos contactando para
@@ -25,14 +88,14 @@ export function Organizar2() {
         </p>
       </section>
       <section className="alinear">
-        <form className="Formulario">
+        <form className="Formulario" onSubmit={handleSubmit}>
           <fieldset className="field">
             <legend>Datos de contacto</legend>
             <div className="color">
               <input type="text"
-                placeholder="Introducir nombre"
-                name="nombre"
-                value={info.nombre}
+                placeholder="Introducir nombre y apellido"
+                name="nombreyapellido"
+                value={info.nombreyapellido}
                 onChange={guardar}
               />
             </div>
@@ -52,7 +115,7 @@ export function Organizar2() {
             <div>
               <label htmlFor="viaje" className="la">Elige tu viaje</label>
               <select
-                name="viaje"
+                name="paquete"
                 id="V"
                 value={info.viaje}
                 onChange={guardar}
